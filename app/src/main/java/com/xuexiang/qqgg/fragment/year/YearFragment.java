@@ -48,12 +48,14 @@ import com.xuexiang.qqgg.adapter.entity.MultiQuery;
 import com.xuexiang.qqgg.core.BaseChartFragment;
 import com.xuexiang.qqgg.fragment.AboutFragment;
 import com.xuexiang.qqgg.utils.SqlLiteUtils;
+import com.xuexiang.qqgg.utils.XToastUtils;
 import com.xuexiang.xpage.annotation.Page;
 import com.xuexiang.xpage.enums.CoreAnim;
 import com.xuexiang.xui.widget.actionbar.TitleBar;
 import com.xuexiang.xui.widget.imageview.RadiusImageView;
 import com.xuexiang.xui.widget.picker.widget.TimePickerView;
 import com.xuexiang.xui.widget.picker.widget.builder.TimePickerBuilder;
+import com.xuexiang.xui.widget.popupwindow.bar.CookieBar;
 import com.xuexiang.xui.widget.tabbar.TabSegment;
 import com.xuexiang.xutil.data.DateUtils;
 
@@ -83,8 +85,8 @@ public class YearFragment extends BaseChartFragment implements OnChartValueSelec
     @BindView(R.id.year_calender)
     RadiusImageView year_calender;
 
-    @BindView(R.id.about)
-    RadiusImageView about;
+    @BindView(R.id.totalBalance)
+    RadiusImageView totalBalance;
     @BindView(R.id.year_date)
     TextView year_date;
     @BindView(R.id.year_income)
@@ -170,10 +172,48 @@ public class YearFragment extends BaseChartFragment implements OnChartValueSelec
             }
         });
 
-        about.setOnClickListener(new View.OnClickListener() {
+        totalBalance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openNewPage(AboutFragment.class);
+                /*openNewPage(AboutFragment.class);*/
+                BigDecimal allInMoney=new BigDecimal(0);
+                BigDecimal allOutMoney=new BigDecimal(0);
+                MultiQuery multiQuery = new MultiQuery();
+
+                List<DayMoney> moneyAllList = sqlLiteUtils.query(multiQuery);
+                for (DayMoney dayMoney : moneyAllList) {
+                    if (dayMoney.getIncome() == 0) {
+                        allOutMoney=allOutMoney.add(new BigDecimal(Float.toString(dayMoney.getMoney())));
+                    }else {
+                        allInMoney=allInMoney.add(new BigDecimal(Float.toString(dayMoney.getMoney())));
+                    }
+                }
+                BigDecimal totalBalance=new BigDecimal(0);
+
+                String l="";
+
+                if(allInMoney.compareTo(allOutMoney) > -1){
+                    //收入大于等于支出
+                    totalBalance=allInMoney.subtract(allOutMoney);
+                    l="+";
+                }else {
+                    totalBalance=allOutMoney.subtract(allInMoney);
+                    l="-";
+                }
+
+                StringBuilder content=new StringBuilder()
+                        .append("    总记账详情\n")
+                        .append("  总收入：¥"+allInMoney+"\n")
+                        .append("  总支出：¥"+allOutMoney+"\n")
+                        .append("  总余额：¥"+l+totalBalance);
+
+
+                CookieBar.builder(getActivity())
+                        .setBackgroundColor(R.color.colorPrimary)
+                        .setMessage(content.toString())
+                        .setDuration(-1)
+                        .setActionWithIcon(R.drawable.ic_web_close, view12 -> {})
+                        .show();
             }
         });
 

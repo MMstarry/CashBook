@@ -78,13 +78,13 @@
 
         </LinearLayout>
         <com.xuexiang.xui.widget.imageview.RadiusImageView
-            android:id="@+id/about"
+            android:id="@+id/totalBalance"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="10dp"
             android:layout_marginStart="8dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/about"
+            app:srcCompat="@drawable/yue"
             app:riv_border_width="0dp"
             app:riv_corner_radius="5dp" />
 

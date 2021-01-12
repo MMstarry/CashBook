@@ -315,10 +315,10 @@ public class DayFragment extends BaseFragment {
 
 
     private void chaxun(int year, int monthOfYear, int dayOfMonth,@NonNull RecyclerViewHolder holder) {
-        String date=year+"-"+Utils.autoGenericCode(monthOfYear+1,2)+"-"+Utils.autoGenericCode(dayOfMonth,2);
-        startTime=date+" 00:00:00";
-        endTime=date+" 23:59:59";
-        holder.text(R.id.day_date,date);
+        date1=year+"-"+Utils.autoGenericCode(monthOfYear+1,2)+"-"+Utils.autoGenericCode(dayOfMonth,2);
+        startTime=date1+" 00:00:00";
+        endTime=date1+" 23:59:59";
+        holder.text(R.id.day_date,date1);
         initListeners();
     }
 
