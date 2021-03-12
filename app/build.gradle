@@ -13,8 +13,8 @@ android {
         applicationId "com.xuexiang.qqgg"
         minSdkVersion 17
         targetSdkVersion build_versions.target_sdk
-        versionCode 107
-        versionName "1.0.7"
+        versionCode 109
+        versionName "1.0.9"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
@@ -30,10 +30,15 @@ android {
     signingConfigs {
         if (isNeedPackage.toBoolean()) {
             release {
-                storeFile file(app_release.storeFile)
+               /* storeFile file(app_release.storeFile)
                 storePassword app_release.storePassword
                 keyAlias app_release.keyAlias
-                keyPassword app_release.keyPassword
+                keyPassword app_release.keyPassword*/
+
+                storeFile file("./debug.jks")
+                storePassword "123456"
+                keyAlias "debug"
+                keyPassword "123456"
             }
         }
 
@@ -48,32 +53,18 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled true
-            shrinkResources true
+            minifyEnabled true  //是否进行混淆
+            zipAlignEnabled true // 是否支持zip 压缩优化
+            shrinkResources true // 移除无用资源
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            if (isNeedPackage.toBoolean()) {
-                signingConfig signingConfigs.release
-
-                Properties properties = new Properties()
-                properties.load(project.rootProject.file('local.properties').newDataInputStream())
-                def appID = properties.getProperty("APP_ID_UMENG")
-                if (appID != null) {
-                    buildConfigField "String", "APP_ID_UMENG", appID
-                } else {
-                    buildConfigField "String", "APP_ID_UMENG", '""'
-                }
-            } else {
-                signingConfig signingConfigs.debug
-                buildConfigField "String", "APP_ID_UMENG", '""'
-            }
+            signingConfig signingConfigs.release
         }
 
         debug {
             debuggable true
             minifyEnabled false
-
             signingConfig signingConfigs.debug
-            buildConfigField "String", "APP_ID_UMENG", '""'
+
         }
     }
 
@@ -107,9 +98,6 @@ dependencies {
     implementation 'com.tencent:mmkv:1.0.22'
     //屏幕适配AutoSize
     implementation 'me.jessyan:autosize:1.1.2'
-    //umeng统计
-    implementation 'com.umeng.umsdk:analytics:8.0.2'
-    implementation 'com.umeng.umsdk:common:2.0.2'
 
     //ANR异常捕获
     implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
@@ -117,7 +105,7 @@ dependencies {
     //美团多渠道打包
     implementation 'com.meituan.android.walle:library:1.1.6'
 
-//Android图表库
+    //Android图表库
     implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
 
 }

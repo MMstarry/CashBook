@@ -19,7 +19,7 @@ package com.xuexiang.qqgg.utils;
 
 import android.content.Context;
 
-import com.umeng.analytics.MobclickAgent;
+
 import com.xuexiang.xutil.common.StringUtils;
 
 /**
@@ -74,7 +74,7 @@ public final class TokenUtils {
     public static boolean handleLoginSuccess(String token) {
         if (!StringUtils.isEmpty(token)) {
             XToastUtils.success("登录成功！");
-            MobclickAgent.onProfileSignIn(KEY_PROFILE_CHANNEL, token);
+
             setToken(token);
             return true;
         } else {
@@ -87,7 +87,6 @@ public final class TokenUtils {
      * 处理登出的事件
      */
     public static void handleLogoutSuccess() {
-        MobclickAgent.onProfileSignOff();
         //登出时，清除账号信息
         clearToken();
 

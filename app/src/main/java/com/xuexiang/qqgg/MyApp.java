@@ -24,7 +24,6 @@ import androidx.multidex.MultiDex;
 
 import com.xuexiang.qqgg.utils.SqlLiteUtils;
 import com.xuexiang.qqgg.utils.sdkinit.ANRWatchDogInit;
-import com.xuexiang.qqgg.utils.sdkinit.UMengInit;
 import com.xuexiang.qqgg.utils.sdkinit.XBasicLibInit;
 import com.xuexiang.qqgg.utils.sdkinit.XUpdateInit;
 
@@ -80,7 +79,7 @@ public class MyApp extends Application {
 
         //运营统计数据运行时不初始化
         if (!MyApp.isDebug()) {
-            UMengInit.init(this);
+
         }
 
         //ANR监控

@@ -24,7 +24,6 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.umeng.analytics.MobclickAgent;
 import com.xuexiang.qqgg.core.http.loader.ProgressLoader;
 import com.xuexiang.xhttp2.subsciber.impl.IProgressLoader;
 import com.xuexiang.xpage.base.XPageActivity;
@@ -115,13 +114,13 @@ public abstract class BaseFragment extends XPageFragment {
     @Override
     public void onResume() {
         super.onResume();
-        MobclickAgent.onPageStart(getPageName());
+
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        MobclickAgent.onPageEnd(getPageName());
+
     }
 
     //==============================页面跳转api===================================//

@@ -33,7 +33,6 @@
 -keepattributes SourceFile,LineNumberTable
 ########记录生成的日志数据，gradle build时 在本项目根目录输出-end#####
 
--keep class com.xuexiang.xupdate.entity.** { *; }
 #需要保留的东西
 # 保持哪些类不被混淆
 -keep public class * extends android.app.Fragment
@@ -220,14 +219,18 @@
 
 # xpage
 -keep class com.xuexiang.xpage.annotation.** { *; }
+-keep class com.xuexiang.xpage.config.** { *; }
 
 # xaop
 -keep @com.xuexiang.xaop.annotation.* class * {*;}
+-keep @org.aspectj.lang.annotation.* class * {*;}
 -keep class * {
     @com.xuexiang.xaop.annotation.* <fields>;
+    @org.aspectj.lang.annotation.* <fields>;
 }
 -keepclassmembers class * {
     @com.xuexiang.xaop.annotation.* <methods>;
+    @org.aspectj.lang.annotation.* <methods>;
 }
 
 # xrouter
@@ -264,3 +267,9 @@
 }
 
 -keep class com.xuexiang.xui.widget.edittext.materialedittext.** { *; }
+
+#
+-dontwarn com.xuexiang.qqgg.adapter.entity.**
+#对含有反射类的处理
+-keep class com.xuexiang.qqgg.adapter.entity.** { *; }
+

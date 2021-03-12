@@ -55,6 +55,8 @@ public class SplashActivity extends BaseSplashActivity implements CancelAdapt {
     @Override
     protected void onSplashFinished() {
         ActivityUtils.startActivity(MainActivity.class);
+
+        finish();
     }
 
 

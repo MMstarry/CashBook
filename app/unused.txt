@@ -12,7 +12,6 @@ com.xuexiang.qqgg.BuildConfig:
     public static final java.lang.String FLAVOR
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
-    public static final java.lang.String APP_ID_UMENG
 com.alibaba.android.vlayout.layout.MarginLayoutHelper:
     public void setMargin(int,int,int,int)
     public int computeMarginStart(int,boolean,boolean,com.alibaba.android.vlayout.LayoutManagerHelper)
@@ -104,7 +103,11 @@ org.aspectj.lang.reflect.Advice:
     public abstract org.aspectj.lang.reflect.AjType[] getExceptionTypes()
     public abstract org.aspectj.lang.reflect.PointcutExpression getPointcutExpression()
 com.meituan.android.walle.ChannelInfo:
+    public void <init>(java.lang.String,java.util.Map)
+    public java.lang.String getChannel()
     public java.util.Map getExtraInfo()
+    private final java.lang.String channel
+    private final java.util.Map extraInfo
 kotlin.collections.ArraysKt___ArraysKt$asIterable$$inlined$Iterable$3:
     public void <init>(short[])
 android.support.v4.media.MediaDescriptionCompat:
@@ -392,8 +395,6 @@ kotlin.coroutines.experimental.SequenceBuilder:
 com.xuexiang.xui.adapter.recyclerview.sticky.FullSpanUtils:
     public static void onAttachedToRecyclerView(androidx.recyclerview.widget.RecyclerView,androidx.recyclerview.widget.RecyclerView$Adapter,int)
     public static void onViewAttachedToWindow(androidx.recyclerview.widget.RecyclerView$ViewHolder,androidx.recyclerview.widget.RecyclerView$Adapter,int)
-com.xuexiang.xui.widget.popupwindow.bar.Cookie$3:
-    void <init>(com.xuexiang.xui.widget.popupwindow.bar.Cookie)
 butterknife.BindInt:
     public abstract int value()
 io.reactivex.internal.operators.flowable.FlowableWithLatestFromMany:
@@ -954,8 +955,6 @@ com.xuexiang.xpage.base.XPageFragment$PopCallback:
     public abstract void run()
 io.reactivex.internal.operators.maybe.MaybeTakeUntilMaybe:
     public void <init>(io.reactivex.MaybeSource,io.reactivex.MaybeSource)
-com.xuexiang.xaop.cache.converter.SerializableDiskConverter:
-    public boolean writer(java.io.OutputStream,java.lang.Object)
 android.support.v4.media.session.MediaControllerCompat$Callback$MessageHandler:
     void <init>(android.support.v4.media.session.MediaControllerCompat$Callback,android.os.Looper)
     private static final int MSG_EVENT
@@ -990,8 +989,6 @@ kotlin.collections.ArraysKt___ArraysJvmKt$asList$4:
     void <init>(long[])
 com.just.agentweb.core.video.IVideo:
     public abstract boolean isVideoState()
-com.xuexiang.xaop.aspectj.IOThreadAspectJ$2:
-    void <init>(com.xuexiang.xaop.aspectj.IOThreadAspectJ,org.aspectj.lang.ProceedingJoinPoint)
 android.support.v4.media.session.PlaybackStateCompatApi21:
     public static java.lang.Object newInstance(int,long,long,float,long,java.lang.CharSequence,long,java.util.List,long)
 org.aspectj.lang.annotation.AfterReturning:
@@ -1086,7 +1083,6 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$10:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xaop.cache.core.CacheCore:
     public com.xuexiang.xaop.cache.core.CacheCore setICache(com.xuexiang.xaop.cache.core.ICache)
-    public boolean save(java.lang.String,java.lang.Object)
     public boolean containsKey(java.lang.String)
     public boolean remove(java.lang.String)
     public boolean clear()
@@ -1201,21 +1197,6 @@ kotlin.UIntArray:
 com.bumptech.glide.load.resource.bitmap.CircleCrop:
     private static final int VERSION
     private static final java.lang.String ID
-com.xuexiang.xaop.annotation.DiskCache:
-    public abstract java.lang.String value()
-    public abstract long cacheTime()
-    public abstract boolean enableEmpty()
-com.xuexiang.xaop.aspectj.InterceptAspectJ:
-    private boolean proceedIntercept(int[],org.aspectj.lang.JoinPoint)
-    public static com.xuexiang.xaop.aspectj.InterceptAspectJ aspectOf()
-    public static boolean hasAspect()
-    public static synthetic boolean ajc$inlineAccessMethod$com_xuexiang_xaop_aspectj_InterceptAspectJ$com_xuexiang_xaop_aspectj_InterceptAspectJ$proceedIntercept(com.xuexiang.xaop.aspectj.InterceptAspectJ,int[],org.aspectj.lang.JoinPoint)
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void constructorInsideAnnotatedType()
-    public void method()
-    public void constructor()
-    public java.lang.Object aroundJoinPoint(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.Intercept)
 kotlin.jvm.functions.Function11:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 com.xuexiang.xui.utils.Utils:
@@ -1290,9 +1271,7 @@ com.xuexiang.xhttp2.request.BaseRequest$1:
 android.support.v4.media.session.MediaSessionCompatApi24:
     private static final java.lang.String TAG
 com.xuexiang.xaop.cache.core.BaseDiskCache:
-    public boolean save(java.lang.String,java.lang.Object)
     public final boolean clear()
-    protected abstract boolean doSave(java.lang.String,java.lang.Object)
     protected abstract boolean doClear()
 kotlin.SuccessOrFailureKt:
     public static synthetic void SuccessOrFailure$annotations()
@@ -1504,9 +1483,6 @@ com.xuexiang.xui.widget.popupwindow.easypopup.EasyPopup$2:
     void <init>(com.xuexiang.xui.widget.popupwindow.easypopup.EasyPopup)
 com.bumptech.glide.load.model.StringLoader$AssetFileDescriptorFactory:
     public void teardown()
-com.xuexiang.xupdate.proxy.IUpdateHttpService:
-    public abstract void asyncGet(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    public abstract void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 com.xuexiang.xutil.resource.RUtils:
     public static int getAnim(android.content.Context,java.lang.String)
     public static int getAttr(android.content.Context,java.lang.String)
@@ -1641,7 +1617,7 @@ okhttp3.internal.http2.Http2:
     static final byte FLAG_PRIORITY
     static final byte FLAG_COMPRESSED
 com.xuexiang.xupdate.proxy.impl.AbstractUpdateProxy:
-    public void onBeforeCheck()
+    public void noNewVersion(java.lang.Throwable)
 kotlin.random.URandomKt:
     public static final int nextUInt(kotlin.random.Random)
     public static final int nextUInt-qCasIEU(kotlin.random.Random,int)
@@ -1664,8 +1640,6 @@ kotlin.jvm.internal.LongSpreadBuilder:
     public final void add(long)
     public final long[] toArray()
     private final long[] values
-com.xuexiang.xhttp2.subsciber.CallBackSubscriber:
-    public void <init>(com.xuexiang.xhttp2.callback.CallBack)
 com.xuexiang.xutil.display.Colors:
     public static final int WHITE
     public static final int WHITE_TRANSLUCENT
@@ -2269,8 +2243,6 @@ kotlin.coroutines.jvm.internal.DebugMetadata:
     public abstract int[] i()
 com.bumptech.glide.load.model.UriLoader$FileDescriptorFactory:
     public void teardown()
-com.xuexiang.xaop.aspectj.IOThreadAspectJ$1:
-    void <init>(com.xuexiang.xaop.aspectj.IOThreadAspectJ,org.aspectj.lang.ProceedingJoinPoint)
 com.xuexiang.xrouter.logs.XRLog:
     public static void setLogger(com.xuexiang.xrouter.logs.ILogger)
     public static void v(java.lang.String)
@@ -3578,9 +3550,6 @@ com.xuexiang.xui.adapter.recyclerview.XLinearLayoutManager:
 io.reactivex.internal.operators.flowable.FlowableCombineLatest:
     public void <init>(org.reactivestreams.Publisher[],io.reactivex.functions.Function,int,boolean)
     public void <init>(java.lang.Iterable,io.reactivex.functions.Function,int,boolean)
-com.xuexiang.xui.widget.popupwindow.bar.Cookie$4:
-    void <init>(com.xuexiang.xui.widget.popupwindow.bar.Cookie)
-    final synthetic com.xuexiang.xui.widget.popupwindow.bar.Cookie this$0
 kotlin.coroutines.experimental.migration.ExperimentalSuspendFunction0Migration:
     public void <init>(kotlin.jvm.functions.Function1)
     public final kotlin.jvm.functions.Function1 getFunction()
@@ -3660,7 +3629,6 @@ android.support.v4.media.session.MediaControllerCompat$MediaControllerImplApi21:
     public java.lang.String getPackageName()
     public java.lang.Object getMediaController()
 com.xuexiang.xutil.app.ActivityUtils:
-    public static boolean startActivity(android.content.Context,android.content.Intent)
     public static boolean startActivityForResult(android.app.Activity,android.content.Intent,int)
     public static boolean startActivity(androidx.fragment.app.Fragment,android.content.Intent)
     public static boolean startActivityForResult(androidx.fragment.app.Fragment,android.content.Intent,int)
@@ -3895,8 +3863,6 @@ org.aspectj.lang.reflect.DeclareAnnotation:
     public abstract org.aspectj.lang.reflect.TypePattern getTypePattern()
     public abstract java.lang.annotation.Annotation getAnnotation()
     public abstract java.lang.String getAnnotationAsText()
-com.xuexiang.xui.widget.popupwindow.bar.Cookie$1:
-    void <init>(com.xuexiang.xui.widget.popupwindow.bar.Cookie,com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params)
 com.github.mikephil.charting.jobs.MoveViewJob:
     public static com.github.mikephil.charting.jobs.MoveViewJob getInstance(com.github.mikephil.charting.utils.ViewPortHandler,float,float,com.github.mikephil.charting.utils.Transformer,android.view.View)
 io.reactivex.internal.operators.flowable.FlowableTimer:
@@ -4179,16 +4145,10 @@ org.reactivestreams.FlowAdapters$FlowToReactiveSubscription:
     public void request(long)
     public void cancel()
 com.xuexiang.xupdate.UpdateManager:
-    private void <init>(com.xuexiang.xupdate.UpdateManager$Builder)
-    private void doUpdate()
     static synthetic com.xuexiang.xupdate.entity.UpdateEntity access$002(com.xuexiang.xupdate.UpdateManager,com.xuexiang.xupdate.entity.UpdateEntity)
     static synthetic com.xuexiang.xupdate.entity.UpdateEntity access$100(com.xuexiang.xupdate.UpdateManager,com.xuexiang.xupdate.entity.UpdateEntity)
-    synthetic void <init>(com.xuexiang.xupdate.UpdateManager$Builder,com.xuexiang.xupdate.UpdateManager$1)
     public com.xuexiang.xupdate.UpdateManager setIUpdateProxy(com.xuexiang.xupdate.proxy.IUpdateProxy)
-    public com.xuexiang.xupdate.proxy.IUpdateHttpService getIUpdateHttpService()
-    public void update()
-    public void onBeforeCheck()
-    public void checkVersion()
+    public void noNewVersion(java.lang.Throwable)
     public void download(java.lang.String,com.xuexiang.xupdate.service.OnFileDownloadListener)
     public void update(com.xuexiang.xupdate.entity.UpdateEntity)
 kotlin.collections.ArraysKt___ArraysKt$asSequence$$inlined$Sequence$4:
@@ -4510,8 +4470,6 @@ okio.DeflaterSink:
     void <init>(okio.BufferedSink,java.util.zip.Deflater)
 kotlin.sequences.SequencesKt___SequencesKt$minus$2:
     void <init>(kotlin.sequences.Sequence,java.lang.Object[])
-com.xuexiang.xaop.annotation.DebugLog:
-    public abstract int priority()
 kotlin.ULongArrayKt:
     private static final long[] ULongArray(int,kotlin.jvm.functions.Function1)
     private static final varargs long[] ulongArrayOf-QwZRm1k(long[])
@@ -4655,8 +4613,11 @@ okhttp3.Cache:
     private static final int ENTRY_COUNT
 com.meituan.android.walle.WalleChannelReader:
     public static java.lang.String getChannel(android.content.Context)
+    public static java.lang.String getChannel(android.content.Context,java.lang.String)
+    public static com.meituan.android.walle.ChannelInfo getChannelInfo(android.content.Context)
     public static java.lang.String get(android.content.Context,java.lang.String)
     public static java.util.Map getChannelInfoMap(android.content.Context)
+    private static java.lang.String getApkPath(android.content.Context)
 com.github.mikephil.charting.data.BaseEntry:
     public void <init>(float,java.lang.Object)
     public void <init>(float,android.graphics.drawable.Drawable,java.lang.Object)
@@ -4950,9 +4911,6 @@ org.aspectj.internal.lang.annotation.ajcDeclareAnnotation:
     public abstract java.lang.String kind()
 kotlin.text.StringsKt___StringsKt$asIterable$$inlined$Iterable$1:
     public void <init>(java.lang.CharSequence)
-com.xuexiang.xhttp2.request.BaseRequest$3:
-    void <init>(com.xuexiang.xhttp2.request.BaseRequest,com.xuexiang.xhttp2.callback.CallBack)
-    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 okio.Buffer$UnsafeCursor:
     public long resizeBuffer(long)
     public long expandBuffer(int)
@@ -5425,7 +5383,6 @@ com.xuexiang.xutil.XUtil:
     public static void disableAutoInit()
     public static void init(android.app.Application)
     public static void registerLifecycleCallbacks(android.app.Application,com.xuexiang.xutil.app.ActivityLifecycleHelper)
-    public static android.content.ContentResolver getContentResolver()
     public static android.content.res.Resources getResources()
     public static android.content.res.AssetManager getAssetManager()
     public static android.content.pm.PackageManager getPackageManager()
@@ -5490,8 +5447,6 @@ com.xuexiang.xui.widget.imageview.edit.PhotoEditor:
 com.xuexiang.xhttp2.utils.Utils:
     public static boolean isPublicPath(java.io.File)
     public static java.io.OutputStream getOutputStream(java.lang.String,java.lang.String,okhttp3.MediaType)
-com.xuexiang.xui.widget.popupwindow.bar.Cookie$2:
-    void <init>(com.xuexiang.xui.widget.popupwindow.bar.Cookie,com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params)
 io.reactivex.internal.operators.flowable.FlowableInternalHelper$ReplayFunction:
     void <init>(io.reactivex.functions.Function,io.reactivex.Scheduler)
 kotlin.ranges.ComparableRange:
@@ -5756,14 +5711,14 @@ com.xuexiang.xui.widget.alpha.XUIAlphaViewHelper:
     public void <init>(android.view.View,float,float)
 kotlin.comparisons.ComparisonsKt__ComparisonsKt$thenBy$1:
     public void <init>(java.util.Comparator,kotlin.jvm.functions.Function1)
-com.xuexiang.xui.widget.XUIKeyboardScrollView:
-    public com.xuexiang.xui.widget.XUIKeyboardScrollView setIsScrollHideKeyboard(boolean)
-    private static final int DEFAULT_SCROLL_HEIGHT
 com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem:
     private void <init>(com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem$Builder)
     synthetic void <init>(com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem$Builder,com.xuexiang.xui.widget.dialog.materialdialog.simplelist.MaterialSimpleListItem$1)
     public long getId()
     public java.lang.Object getTag()
+com.xuexiang.xui.widget.XUIKeyboardScrollView:
+    public com.xuexiang.xui.widget.XUIKeyboardScrollView setIsScrollHideKeyboard(boolean)
+    private static final int DEFAULT_SCROLL_HEIGHT
 com.xuexiang.xui.widget.guidview.GuideCaseView$Builder:
     public void <init>(android.app.Activity)
     static synthetic android.app.Activity access$000(com.xuexiang.xui.widget.guidview.GuideCaseView$Builder)
@@ -6198,9 +6153,6 @@ com.xuexiang.xpage.utils.TitleBar:
 com.bumptech.glide.load.resource.bitmap.RoundedCorners:
     public void <init>(int)
     private static final java.lang.String ID
-com.xuexiang.xhttp2.request.BaseRequest$4:
-    void <init>(com.xuexiang.xhttp2.request.BaseRequest)
-    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 com.just.agentweb.core.AgentWeb$CommonBuilder:
     public com.just.agentweb.core.AgentWeb$CommonBuilder setEventHanadler(com.just.agentweb.core.event.IEventHandler)
     public com.just.agentweb.core.AgentWeb$CommonBuilder closeWebViewClientHelper()
@@ -6221,14 +6173,6 @@ com.xuexiang.xui.widget.button.switchbutton.SwitchButton:
     public static final int DEFAULT_THUMB_MARGIN_DP
     public static final int DEFAULT_ANIMATION_DURATION
     public static final int DEFAULT_TINT_COLOR
-com.xuexiang.xaop.aspectj.IOThreadAspectJ:
-    public static com.xuexiang.xaop.aspectj.IOThreadAspectJ aspectOf()
-    public static boolean hasAspect()
-    public static synthetic int[] ajc$inlineAccessFieldGet$com_xuexiang_xaop_aspectj_IOThreadAspectJ$com_xuexiang_xaop_aspectj_IOThreadAspectJ$3$$SwitchMap$com$xuexiang$xaop$enums$ThreadType()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
-    public java.lang.Object aroundJoinPoint(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.IOThread)
 com.xuexiang.xaop.cache.XCache$Builder:
     public com.xuexiang.xaop.cache.XCache$Builder memoryMaxSize(int)
     public com.xuexiang.xaop.cache.XCache$Builder cacheTime(long)
@@ -6413,7 +6357,6 @@ io.reactivex.internal.subscribers.BasicFuseableConditionalSubscriber:
     public final boolean offer(java.lang.Object,java.lang.Object)
 com.xuexiang.xaop.cache.XMemoryCache:
     public com.xuexiang.xaop.cache.XMemoryCache init(int)
-    public boolean save(java.lang.String,java.lang.Object)
     public boolean containsKey(java.lang.String)
     public boolean remove(java.lang.String)
     public boolean clear()
@@ -6441,20 +6384,6 @@ io.reactivex.internal.operators.completable.CompletableResumeNext:
     public void <init>(io.reactivex.CompletableSource,io.reactivex.functions.Function)
 com.bumptech.glide.load.Option:
     public static com.bumptech.glide.load.Option disk(java.lang.String,com.bumptech.glide.load.Option$CacheKeyUpdater)
-com.xuexiang.xaop.aspectj.DebugLogAspectJ:
-    private void enterMethod(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DebugLog)
-    private java.lang.StringBuilder getMethodLogInfo(java.lang.String,java.lang.String[],java.lang.Object[])
-    private void exitMethod(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DebugLog,java.lang.Object,long)
-    public static com.xuexiang.xaop.aspectj.DebugLogAspectJ aspectOf()
-    public static boolean hasAspect()
-    public static synthetic void ajc$inlineAccessMethod$com_xuexiang_xaop_aspectj_DebugLogAspectJ$com_xuexiang_xaop_aspectj_DebugLogAspectJ$enterMethod(com.xuexiang.xaop.aspectj.DebugLogAspectJ,org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DebugLog)
-    public static synthetic void ajc$inlineAccessMethod$com_xuexiang_xaop_aspectj_DebugLogAspectJ$com_xuexiang_xaop_aspectj_DebugLogAspectJ$exitMethod(com.xuexiang.xaop.aspectj.DebugLogAspectJ,org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DebugLog,java.lang.Object,long)
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void constructorInsideAnnotatedType()
-    public void method()
-    public void constructor()
-    public java.lang.Object logAndExecute(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DebugLog)
 kotlin.sequences.SequencesKt__SequencesKt:
     private static final kotlin.sequences.Sequence Sequence(kotlin.jvm.functions.Function0)
     public static final kotlin.sequences.Sequence asSequence(java.util.Iterator)
@@ -6676,7 +6605,6 @@ com.xuexiang.xhttp2.callback.ProgressLoadingCallBack:
     public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader)
     public void <init>(com.xuexiang.xhttp2.subsciber.impl.IProgressLoader,boolean,boolean)
     private void init(boolean)
-    public void subscription(io.reactivex.disposables.Disposable)
 com.github.mikephil.charting.charts.BarChart:
     public android.graphics.RectF getBarBounds(com.github.mikephil.charting.data.BarEntry)
     public void getBarBounds(com.github.mikephil.charting.data.BarEntry,android.graphics.RectF)
@@ -6691,20 +6619,17 @@ com.xuexiang.xaop.BuildConfig:
     public static final int VERSION_CODE
     public static final java.lang.String VERSION_NAME
 com.xuexiang.xupdate.XUpdate:
-    public static com.xuexiang.xupdate.UpdateManager$Builder newBuild(android.content.Context)
     public static com.xuexiang.xupdate.UpdateManager$Builder newBuild(android.content.Context,java.lang.String)
     private void logForParams(java.util.Map)
     public com.xuexiang.xupdate.XUpdate params(java.util.Map)
     public com.xuexiang.xupdate.XUpdate setIUpdateChecker(com.xuexiang.xupdate.proxy.IUpdateChecker)
     public com.xuexiang.xupdate.XUpdate setIUpdateParser(com.xuexiang.xupdate.proxy.IUpdateParser)
     public com.xuexiang.xupdate.XUpdate setIUpdatePrompter(com.xuexiang.xupdate.proxy.IUpdatePrompter)
+    public com.xuexiang.xupdate.XUpdate setIUpdateDownLoader(com.xuexiang.xupdate.proxy.IUpdateDownloader)
     public com.xuexiang.xupdate.XUpdate setApkCacheDir(java.lang.String)
-    public com.xuexiang.xupdate.XUpdate supportSilentInstall(boolean)
     public com.xuexiang.xupdate.XUpdate setILogger(com.xuexiang.xupdate.logs.ILogger)
     public com.xuexiang.xupdate.XUpdate setIFileEncryptor(com.xuexiang.xupdate.proxy.IFileEncryptor)
     public com.xuexiang.xupdate.XUpdate setOnInstallListener(com.xuexiang.xupdate.listener.OnInstallListener)
-    public com.xuexiang.xupdate.XUpdate setOnUpdateFailureListener(com.xuexiang.xupdate.listener.OnUpdateFailureListener)
-    java.lang.String mApkCacheDir
 com.bumptech.glide.load.engine.Jobs:
     java.util.Map getAll()
 org.aspectj.lang.Signature:
@@ -6730,9 +6655,6 @@ com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy:
     public void clearMemoryCache(android.content.Context)
     public void clearDiskCache(android.content.Context)
 com.xuexiang.xupdate.utils.UpdateUtils:
-    public static java.lang.Object requireNonNull(java.lang.Object,java.lang.String)
-    public static boolean checkWifi()
-    public static boolean checkNetwork()
     public static java.lang.String getVersionName(android.content.Context)
     public static int compareVersionName(java.lang.String,java.lang.String)
     public static java.lang.String toJson(java.lang.Object)
@@ -6908,7 +6830,6 @@ com.just.agentweb.BuildConfig:
     public static final java.lang.String VERSION_NAME
 com.xuexiang.xupdate.BuildConfig:
     public static final boolean DEBUG
-    public static final java.lang.String LIBRARY_PACKAGE_NAME
     public static final java.lang.String APPLICATION_ID
     public static final java.lang.String BUILD_TYPE
     public static final java.lang.String FLAVOR
@@ -7086,13 +7007,6 @@ com.xuexiang.xutil.app.ServiceUtils:
     public static void bindService(java.lang.Class,android.content.ServiceConnection,int)
     public static void unbindService(android.content.ServiceConnection)
     public static boolean isServiceRunning(java.lang.String)
-com.xuexiang.xaop.aspectj.MainThreadAspectJ:
-    public static com.xuexiang.xaop.aspectj.MainThreadAspectJ aspectOf()
-    public static boolean hasAspect()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
-    public void aroundJoinPoint(org.aspectj.lang.ProceedingJoinPoint)
 io.reactivex.observers.SerializedObserver:
     static final int QUEUE_LINK_SIZE
 io.reactivex.internal.operators.flowable.FlowableBuffer:
@@ -7129,9 +7043,7 @@ com.xuexiang.xutil.app.SAFUtils:
     public static android.os.ParcelFileDescriptor openFileDescriptor(android.net.Uri,java.lang.String)
     public static android.os.ParcelFileDescriptor openFileDescriptorWithException(android.net.Uri,java.lang.String)
     public static android.content.res.AssetFileDescriptor openAssetFileDescriptor(android.net.Uri)
-    public static android.content.res.AssetFileDescriptor openAssetFileDescriptorWithException(android.net.Uri)
     public static android.content.res.AssetFileDescriptor openAssetFileDescriptor(android.net.Uri,java.lang.String)
-    public static android.content.res.AssetFileDescriptor openAssetFileDescriptorWithException(android.net.Uri,java.lang.String)
     public static boolean writeFileToPublicDownloads(java.lang.String,java.lang.String,java.lang.String,java.io.InputStream)
     private static android.net.Uri getFileDownloadUri(java.lang.String,java.lang.String,java.lang.String)
     public static boolean saveImageToPublicDCIM(java.lang.String,java.lang.String,android.graphics.Bitmap,android.graphics.Bitmap$CompressFormat)
@@ -7205,6 +7117,8 @@ org.aspectj.runtime.internal.cflowstack.ThreadStackFactoryImpl$ThreadCounterImpl
 com.xuexiang.xui.widget.dialog.DialogLoader:
     public com.xuexiang.xui.widget.dialog.DialogLoader setIDialogStrategy(com.xuexiang.xui.widget.dialog.strategy.IDialogStrategy)
     public android.app.Dialog showTipDialog(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String)
     public android.app.Dialog showInputDialog(android.content.Context,int,java.lang.String,java.lang.String,com.xuexiang.xui.widget.dialog.strategy.InputInfo,com.xuexiang.xui.widget.dialog.strategy.InputCallback,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,java.lang.String[],android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,int,android.content.DialogInterface$OnClickListener)
@@ -7338,7 +7252,6 @@ com.xuexiang.xhttp2.XHttp:
     public static void clearCache()
     public static void removeCache(java.lang.String)
     public com.xuexiang.xhttp2.XHttp debug(boolean)
-    public com.xuexiang.xhttp2.XHttp setStrictMode(boolean)
     public com.xuexiang.xhttp2.XHttp setSubUrl(java.lang.String)
     public com.xuexiang.xhttp2.XHttp setReadTimeOut(long)
     public com.xuexiang.xhttp2.XHttp setWriteTimeOut(long)
@@ -7375,7 +7288,6 @@ com.xuexiang.xui.widget.button.switchbutton.ColorUtils:
     private static final int CHECKED_ATTR
     private static final int PRESSED_ATTR
 com.xuexiang.xupdate.utils.ApkInstallUtils:
-    public static void setSupportSilentInstall(boolean)
     private static final int APP_INSTALL_AUTO
     private static final int APP_INSTALL_INTERNAL
     private static final int APP_INSTALL_EXTERNAL
@@ -7383,7 +7295,6 @@ com.xuexiang.xupdate.utils.ApkInstallUtils:
 com.xuexiang.qqgg.utils.Utils:
     public static com.just.agentweb.core.AgentWeb createAgentWeb(androidx.fragment.app.Fragment,android.view.ViewGroup,java.lang.String)
     public static boolean isColorDark(int)
-    private static final java.lang.String PRIVACY_URL
 kotlin.text.StringsKt__StringBuilderJVMKt:
     private static final void set(java.lang.StringBuilder,int,char)
     public static final java.lang.StringBuilder clear(java.lang.StringBuilder)
@@ -7624,18 +7535,14 @@ com.bumptech.glide.load.engine.ResourceRecycler$ResourceRecyclerCallback:
 com.xuexiang.xui.widget.imageview.crop.HandleUtil:
     private static final int TARGET_RADIUS_DP
 com.xuexiang.xutil.file.FileUtils:
-    public static boolean isSDCardExist()
     public static java.lang.String getDiskCacheDir()
     public static java.lang.String getDiskCacheDir(java.lang.String)
-    public static java.lang.String getDiskFilesDir()
     public static java.lang.String getDiskFilesDir(java.lang.String)
     public static java.lang.String getDiskDir(java.lang.String)
     public static java.lang.String getDiskDir()
     public static java.lang.String getFilePath(java.lang.String,java.lang.String)
     public static java.lang.String getDirPath(java.lang.String)
     public static boolean isFileExists(java.io.File)
-    public static boolean isFileExists(java.lang.String)
-    private static boolean isFileExistsApi29(java.lang.String)
     public static boolean isFolderExist(java.lang.String)
     public static boolean isFolderExist(java.io.File)
     public static boolean isDir(java.lang.String)
@@ -8017,6 +7924,8 @@ com.bumptech.glide.manager.RequestManagerRetriever:
     private static final java.lang.String FRAGMENT_INDEX_KEY
 kotlin.reflect.KProperty:
     public abstract kotlin.reflect.KProperty$Getter getGetter()
+com.xuexiang.qqgg.utils.HttpUtils:
+    public static void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 com.xuexiang.xui.widget.imageview.RadiusImageView:
     public boolean isCircle()
     public boolean isOval()
@@ -8353,7 +8262,6 @@ com.just.agentweb.core.web.controller.DefaultDesignUIController$1:
     void <init>(com.just.agentweb.core.web.controller.DefaultDesignUIController,android.os.Handler$Callback)
     final synthetic com.just.agentweb.core.web.controller.DefaultDesignUIController this$0
 com.xuexiang.xui.widget.grouplist.XUICommonListItemView:
-    public void updateImageViewLp(com.xuexiang.xui.widget.grouplist.XUICommonListItemView$LayoutParamConfig)
     public void showRedDot(boolean)
     public void showRedDot(boolean,boolean)
     public void showNewTip(boolean)
@@ -8674,8 +8582,6 @@ com.just.agentweb.core.client.WebViewClientDelegate:
 io.reactivex.observers.ResourceSingleObserver:
     public final void add(io.reactivex.disposables.Disposable)
 com.xuexiang.xhttp2.utils.TypeUtils:
-    public static java.lang.reflect.Type findNeedClass(java.lang.Class)
-    public static java.lang.reflect.Type findRawType(java.lang.Class)
     public static java.lang.reflect.Type getApiResultType(java.lang.reflect.Type)
     public static java.lang.reflect.Type getListType(java.lang.reflect.Type)
 com.xuexiang.xui.widget.picker.wheelview.timer.MessageHandler:
@@ -8765,9 +8671,6 @@ com.xuexiang.xhttp2.request.BaseRequest:
     public com.xuexiang.xhttp2.request.BaseRequest addCookie(okhttp3.Cookie)
     public com.xuexiang.xhttp2.request.BaseRequest addCookies(java.util.List)
     public io.reactivex.Observable execute(java.lang.Class)
-    public io.reactivex.disposables.Disposable execute(com.xuexiang.xhttp2.callback.CallBack)
-    protected io.reactivex.Observable toObservable(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBackProxy)
-    public io.reactivex.disposables.Disposable execute(com.xuexiang.xhttp2.callback.CallBackProxy)
 io.reactivex.internal.operators.flowable.FlowableBufferTimed:
     public void <init>(io.reactivex.Flowable,long,long,java.util.concurrent.TimeUnit,io.reactivex.Scheduler,java.util.concurrent.Callable,int,boolean)
 com.alibaba.android.vlayout.VirtualLayoutManager:
@@ -8803,8 +8706,6 @@ io.github.inflationx.viewpump.InflateResult$Builder:
     public final io.github.inflationx.viewpump.InflateResult$Builder context(android.content.Context)
     public final io.github.inflationx.viewpump.InflateResult$Builder attrs(android.util.AttributeSet)
 com.xuexiang.xupdate.proxy.IUpdateChecker:
-    public abstract void onBeforeCheck()
-    public abstract void checkVersion(boolean,java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateProxy)
     public abstract void processCheckResult(java.lang.String,com.xuexiang.xupdate.proxy.IUpdateProxy)
 okio.Utf8:
     public static long size(java.lang.String)
@@ -8814,6 +8715,11 @@ io.reactivex.internal.operators.flowable.FlowableDistinct:
 com.xuexiang.xui.UIConfig:
     public com.xuexiang.xui.UIConfig setStatefulLayoutConfig(com.xuexiang.xui.widget.statelayout.StateLayoutConfig)
     public com.xuexiang.xui.UIConfig setAppIcon(android.graphics.drawable.Drawable)
+com.meituan.android.walle.PayloadReader:
+    public static java.lang.String getString(java.io.File,int)
+    public static byte[] get(java.io.File,int)
+    private static byte[] getBytes(java.nio.ByteBuffer)
+    private static java.util.Map getAll(java.io.File)
 com.xuexiang.qqgg.adapter.base.delegate.XDelegateAdapter:
     public void <init>(java.lang.Object[])
     private boolean checkPosition(int)
@@ -8926,34 +8832,14 @@ com.xuexiang.xui.widget.dialog.strategy.InputInfo:
     public boolean isAllowEmptyInput()
     public com.xuexiang.xui.widget.dialog.strategy.InputInfo setAllowEmptyInput(boolean)
 com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section:
-    public void <init>(android.content.Context)
-    static synthetic int access$000(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
-    static synthetic int access$100(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
-    public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section addItemView(com.xuexiang.xui.widget.grouplist.XUICommonListItemView,android.view.View$OnClickListener)
-    public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section addItemView(com.xuexiang.xui.widget.grouplist.XUICommonListItemView,android.view.View$OnClickListener,android.view.View$OnLongClickListener)
-    public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setTitle(java.lang.CharSequence)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setDescription(java.lang.CharSequence)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setUseDefaultTitleIfNone(boolean)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setUseTitleViewForSectionSpace(boolean)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setSeparatorDrawableRes(int,int,int,int)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setSeparatorDrawableRes(int)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section setLeftIconSize(int,int)
-    public void addTo(com.xuexiang.xui.widget.grouplist.XUIGroupListView)
     public void removeFrom(com.xuexiang.xui.widget.grouplist.XUIGroupListView)
-    public com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView createSectionHeader(java.lang.CharSequence)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView createSectionFooter(java.lang.CharSequence)
-    private android.content.Context mContext
-    private com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView mTitleView
-    private com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView mDescriptionView
-    private android.util.SparseArray mItemViews
-    private boolean mUseDefaultTitleIfNone
-    private boolean mUseTitleViewForSectionSpace
-    private int mSeparatorDrawableForSingle
-    private int mSeparatorDrawableForTop
-    private int mSeparatorDrawableForBottom
-    private int mSeparatorDrawableForMiddle
-    private int mLeftIconWidth
-    private int mLeftIconHeight
 com.xuexiang.xui.widget.layout.linkage.PosIndicator:
     private void restorePosIfNeeded()
     public void initStartAndEndPos(int,int)
@@ -9000,14 +8886,7 @@ com.bumptech.glide.load.model.stream.MediaStoreImageThumbLoader$Factory:
 butterknife.Setter:
     public abstract void set(android.view.View,java.lang.Object,int)
 com.xuexiang.xui.widget.popupwindow.bar.CookieBar:
-    private void <init>(android.app.Activity,com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params)
-    public static com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder builder(android.app.Activity)
-    synthetic void <init>(android.app.Activity,com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params,com.xuexiang.xui.widget.popupwindow.bar.CookieBar$1)
-    public void show()
     public void dismiss()
-    public android.app.Activity getActivity()
-    private com.xuexiang.xui.widget.popupwindow.bar.Cookie mCookieView
-    private java.lang.ref.WeakReference mActivityWeakRef
 io.reactivex.internal.operators.completable.CompletableFromAction:
     public void <init>(io.reactivex.functions.Action)
 android.support.v4.media.session.MediaSessionCompat$Token:
@@ -9205,8 +9084,6 @@ com.xuexiang.xrouter.annotation.Interceptor:
     public abstract java.lang.String name()
 com.bumptech.glide.request.target.ViewTarget$1:
     void <init>(com.bumptech.glide.request.target.ViewTarget)
-com.xuexiang.xaop.cache.converter.IDiskConverter:
-    public abstract boolean writer(java.io.OutputStream,java.lang.Object)
 org.aspectj.runtime.internal.Conversions:
     public static java.lang.Object shortObject(short)
     public static java.lang.Object byteObject(byte)
@@ -9294,9 +9171,6 @@ io.reactivex.SingleEmitter:
     public abstract void setCancellable(io.reactivex.functions.Cancellable)
     public abstract boolean isDisposed()
     public abstract boolean tryOnError(java.lang.Throwable)
-com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl:
-    public void asyncGet(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    public void asyncPost(java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 org.reactivestreams.FlowAdapters$FlowToReactiveSubscriber:
     public void onSubscribe(java.util.concurrent.Flow$Subscription)
     public void onNext(java.lang.Object)
@@ -9309,17 +9183,6 @@ com.xuexiang.xui.widget.popupwindow.popup.XUIBasePopup$1:
 com.xuexiang.xhttp2.request.body.UploadProgressRequestBody:
     public void <init>(com.xuexiang.xhttp2.callback.impl.IProgressResponseCallBack)
     public void setRequestBody(okhttp3.RequestBody)
-com.xuexiang.xaop.aspectj.DiskCacheAspectJ:
-    private void saveResult(java.lang.String,java.lang.Object)
-    private java.lang.String getCacheMsg(org.aspectj.lang.ProceedingJoinPoint,java.lang.String,java.lang.Object)
-    public static com.xuexiang.xaop.aspectj.DiskCacheAspectJ aspectOf()
-    public static boolean hasAspect()
-    public static synthetic java.lang.String ajc$inlineAccessMethod$com_xuexiang_xaop_aspectj_DiskCacheAspectJ$com_xuexiang_xaop_aspectj_DiskCacheAspectJ$getCacheMsg(com.xuexiang.xaop.aspectj.DiskCacheAspectJ,org.aspectj.lang.ProceedingJoinPoint,java.lang.String,java.lang.Object)
-    public static synthetic void ajc$inlineAccessMethod$com_xuexiang_xaop_aspectj_DiskCacheAspectJ$com_xuexiang_xaop_aspectj_DiskCacheAspectJ$saveResult(com.xuexiang.xaop.aspectj.DiskCacheAspectJ,java.lang.String,java.lang.Object)
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
-    public java.lang.Object aroundJoinPoint(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.DiskCache)
 com.just.agentweb.core.web.AbsAgentWebSettings:
     public static final java.lang.String USERAGENT_UC
     public static final java.lang.String USERAGENT_QQ_BROWSER
@@ -9482,9 +9345,6 @@ com.xuexiang.xrouter.model.RouteInfo:
     public com.xuexiang.xrouter.model.RouteInfo setRawType(javax.lang.model.element.Element)
 com.xuexiang.xui.widget.XUIWrapContentExpandableListView:
     public void <init>(android.content.Context,int)
-com.xuexiang.xaop.aspectj.MainThreadAspectJ$1:
-    void <init>(com.xuexiang.xaop.aspectj.MainThreadAspectJ,org.aspectj.lang.ProceedingJoinPoint)
-    final synthetic com.xuexiang.xaop.aspectj.MainThreadAspectJ this$0
 com.xuexiang.xupdate.UpdateManager$1:
     public void onParseResult(com.xuexiang.xupdate.entity.UpdateEntity)
 com.xuexiang.xui.utils.SpanUtils$SpaceSpan:
@@ -9550,10 +9410,7 @@ com.xuexiang.xaop.util.ClickUtils:
 kotlin.jvm.Throws:
     public abstract java.lang.Class[] exceptionClasses()
 com.xuexiang.xupdate.proxy.IUpdateProxy:
-    public abstract com.xuexiang.xupdate.proxy.IUpdateHttpService getIUpdateHttpService()
-    public abstract void update()
-    public abstract void onBeforeCheck()
-    public abstract void checkVersion()
+    public abstract void noNewVersion(java.lang.Throwable)
 com.xuexiang.xui.widget.activity.BaseGuideActivity:
     public void initGuideView(java.util.List,java.lang.Class,com.xuexiang.xui.widget.banner.widget.banner.SimpleGuideBanner$OnJumpClickListener)
 okhttp3.CertificatePinner$Builder:
@@ -9959,20 +9816,8 @@ com.xuexiang.xui.widget.layout.IXUILayout:
 com.bumptech.glide.load.resource.bitmap.VideoBitmapDecoder:
     public void <init>(android.content.Context)
     public void <init>(com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool)
-com.xuexiang.xaop.aspectj.PermissionAspectJ:
-    public static boolean hasAspect()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
 com.bumptech.glide.load.resource.bitmap.DrawableToBitmapConverter:
     private static final java.lang.String TAG
-com.xuexiang.xaop.aspectj.SafeAspectJ:
-    public static com.xuexiang.xaop.aspectj.SafeAspectJ aspectOf()
-    public static boolean hasAspect()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
-    public java.lang.Object aroundJoinPoint(org.aspectj.lang.ProceedingJoinPoint,com.xuexiang.xaop.annotation.Safe)
 com.xuexiang.xui.widget.picker.wheelview.adapter.WheelAdapter:
     public abstract int indexOf(java.lang.Object)
 io.reactivex.processors.SerializedProcessor:
@@ -10124,7 +9969,6 @@ okhttp3.WebSocket$Factory:
 io.reactivex.internal.operators.completable.CompletableDefer:
     public void <init>(java.util.concurrent.Callable)
 com.xuexiang.xui.widget.grouplist.XUIGroupListSectionHeaderFooterView:
-    public void <init>(android.content.Context,java.lang.CharSequence)
     public void <init>(android.content.Context,java.lang.CharSequence,boolean)
 com.just.agentweb.action.Action:
     public void setPermissions(java.lang.String[])
@@ -10232,6 +10076,9 @@ okhttp3.internal.tls.CertificateChainCleaner:
 com.bumptech.glide.load.engine.bitmap_recycle.ByteArrayAdapter:
     private static final java.lang.String TAG
 com.meituan.android.walle.ChannelReader:
+    public static com.meituan.android.walle.ChannelInfo get(java.io.File)
+    public static java.util.Map getMap(java.io.File)
+    public static java.lang.String getRaw(java.io.File)
     public static final java.lang.String CHANNEL_KEY
 com.bumptech.glide.load.engine.cache.DiskLruCacheFactory:
     public void <init>(java.lang.String,long)
@@ -10305,16 +10152,12 @@ com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy$2:
 com.bumptech.glide.load.model.UriLoader$StreamFactory:
     public void teardown()
 com.xuexiang.xaop.cache.XDiskCache:
-    public static com.xuexiang.xaop.cache.XDiskCache getInstance()
     public com.xuexiang.xaop.cache.XDiskCache init(com.xuexiang.xaop.cache.XCache$Builder)
     public java.lang.Object load(java.lang.String)
     public java.lang.Object load(java.lang.String,long)
-    public java.lang.Object load(java.lang.reflect.Type,java.lang.String,long)
-    public boolean save(java.lang.String,java.lang.Object)
     public boolean containsKey(java.lang.String)
     public boolean remove(java.lang.String)
     public boolean clear()
-    private static com.xuexiang.xaop.cache.XDiskCache sInstance
 com.bumptech.glide.request.RequestOptions:
     public static com.bumptech.glide.request.RequestOptions sizeMultiplierOf(float)
     public static com.bumptech.glide.request.RequestOptions priorityOf(com.bumptech.glide.Priority)
@@ -10365,17 +10208,13 @@ com.xuexiang.xaop.XAOP:
     public static void setIDiskConverter(com.xuexiang.xaop.cache.converter.IDiskConverter)
     public static void setICacheKeyCreator(com.xuexiang.xaop.cache.key.ICacheKeyCreator)
     public static void setInterceptor(com.xuexiang.xaop.checker.Interceptor)
-    public static com.xuexiang.xaop.checker.Interceptor getInterceptor()
     public static void setIThrowableHandler(com.xuexiang.xaop.checker.IThrowableHandler)
-    public static com.xuexiang.xaop.checker.IThrowableHandler getIThrowableHandler()
     public static void debug(java.lang.String)
     public static void setPriority(int)
     public static void setISerializer(com.xuexiang.xaop.util.Strings$ISerializer)
     public static void setLogger(com.xuexiang.xaop.logger.ILogger)
     public static void initMemoryCache(int)
     public static void initDiskCache(com.xuexiang.xaop.cache.XCache$Builder)
-    private static com.xuexiang.xaop.checker.Interceptor sInterceptor
-    private static com.xuexiang.xaop.checker.IThrowableHandler sIThrowableHandler
 io.reactivex.internal.operators.single.SingleUsing:
     public void <init>(java.util.concurrent.Callable,io.reactivex.functions.Function,io.reactivex.functions.Consumer,boolean)
 io.reactivex.internal.operators.completable.CompletableDoOnEvent:
@@ -10788,10 +10627,6 @@ com.xuexiang.xutil.common.CollectionUtils:
 kotlin.coroutines.jvm.internal.CoroutineStackFrame:
     public abstract kotlin.coroutines.jvm.internal.CoroutineStackFrame getCallerFrame()
     public abstract java.lang.StackTraceElement getStackTraceElement()
-com.xuexiang.xaop.annotation.IOThread:
-    public abstract com.xuexiang.xaop.enums.ThreadType value()
-com.xuexiang.xaop.checker.Interceptor:
-    public abstract boolean intercept(int,org.aspectj.lang.JoinPoint)
 io.reactivex.internal.operators.single.SingleDoOnError:
     public void <init>(io.reactivex.SingleSource,io.reactivex.functions.Consumer)
 com.bumptech.glide.request.target.NotificationTarget:
@@ -10977,7 +10812,6 @@ kotlin.UShortArrayKt:
     private static final short[] UShortArray(int,kotlin.jvm.functions.Function1)
     private static final varargs short[] ushortArrayOf-rL5Bavg(short[])
 com.xuexiang.xaop.cache.core.LruDiskCache:
-    protected boolean doSave(java.lang.String,java.lang.Object)
     protected boolean doClear()
     public static final long CACHE_NEVER_EXPIRE
 com.xuexiang.xui.widget.imageview.preview.PreviewBuilder:
@@ -11068,6 +10902,15 @@ com.xuexiang.xhttp2.reflect.TypeBuilder:
 io.reactivex.internal.fuseable.FuseToFlowable:
     public abstract io.reactivex.Flowable fuseToFlowable()
 com.meituan.android.walle.ApkUtil:
+    public static long getCommentLength(java.nio.channels.FileChannel)
+    public static long findCentralDirStartOffset(java.nio.channels.FileChannel)
+    public static long findCentralDirStartOffset(java.nio.channels.FileChannel,long)
+    public static com.meituan.android.walle.Pair findApkSigningBlock(java.nio.channels.FileChannel)
+    public static com.meituan.android.walle.Pair findApkSigningBlock(java.nio.channels.FileChannel,long)
+    public static java.util.Map findIdValues(java.nio.ByteBuffer)
+    private static java.nio.ByteBuffer sliceFromTo(java.nio.ByteBuffer,int,int)
+    private static java.nio.ByteBuffer getByteBuffer(java.nio.ByteBuffer,int)
+    private static void checkByteOrderLittleEndian(java.nio.ByteBuffer)
     public static final long APK_SIG_BLOCK_MAGIC_HI
     public static final long APK_SIG_BLOCK_MAGIC_LO
     private static final int APK_SIG_BLOCK_MIN_SIZE
@@ -11153,6 +10996,8 @@ kotlin.jvm.JvmClassMappingKt:
     public static final java.lang.Class getRuntimeClassOfKClassInstance(kotlin.reflect.KClass)
     private static final boolean isArrayOf(java.lang.Object[])
     public static final kotlin.reflect.KClass getAnnotationClass(java.lang.annotation.Annotation)
+com.xuexiang.qqgg.utils.HttpUtils$2:
+    void <init>(com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
 com.xuexiang.xutil.system.KeyboardUtils$2:
     void <init>(android.app.Activity,android.view.View,int)
 io.reactivex.internal.operators.maybe.MaybeEqualSingle:
@@ -11246,7 +11091,6 @@ com.xuexiang.xutil.app.PathUtils:
     public static android.net.Uri getMediaContentUri(java.io.File)
     public static android.net.Uri getMediaContentUri(android.content.Context,java.io.File)
     public static android.net.Uri getDownloadContentUri(android.content.Context,java.io.File)
-    public static android.net.Uri getUriForFile(java.io.File)
     public static android.net.Uri getUriByFilePath(java.lang.String)
     public static android.net.Uri getUriByFile(java.io.File)
     public static java.io.File uri2File(android.net.Uri,java.lang.String)
@@ -11270,10 +11114,10 @@ kotlin.properties.ObservableProperty:
     public java.lang.Object getValue(java.lang.Object,kotlin.reflect.KProperty)
     public void setValue(java.lang.Object,kotlin.reflect.KProperty,java.lang.Object)
     private java.lang.Object value
-com.xuexiang.xhttp2.callback.CallBack:
-    public java.lang.reflect.Type getType()
-    public java.lang.reflect.Type getRawType()
 com.meituan.android.walle.Pair:
+    private void <init>(java.lang.Object,java.lang.Object)
+    public static com.meituan.android.walle.Pair of(java.lang.Object,java.lang.Object)
+    public java.lang.Object getFirst()
     public java.lang.Object getSecond()
 io.reactivex.internal.operators.flowable.FlowableLimit:
     public void <init>(io.reactivex.Flowable,long)
@@ -11350,6 +11194,9 @@ com.bumptech.glide.load.engine.SourceGenerator:
     private static final java.lang.String TAG
 kotlin.jvm.functions.Function8:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
+com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$2:
+    void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
+    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 kotlin.collections.MovingSubList:
     public void <init>(java.util.List)
     public final void move(int,int)
@@ -11501,11 +11348,6 @@ io.reactivex.internal.operators.single.SingleContains:
 com.just.agentweb.js.JsInterfaceHolder:
     public abstract com.just.agentweb.js.JsInterfaceHolder addJavaObject(java.lang.String,java.lang.Object)
     public abstract boolean checkObject(java.lang.Object)
-com.xuexiang.xaop.aspectj.MemoryCacheAspectJ:
-    public static boolean hasAspect()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
 io.reactivex.internal.operators.single.SingleDelayWithPublisher:
     public void <init>(io.reactivex.SingleSource,org.reactivestreams.Publisher)
 com.xuexiang.xui.widget.imageview.strategy.LoadOption:
@@ -11564,8 +11406,6 @@ com.xuexiang.xutil.app.AppUtils:
     public static android.graphics.drawable.Drawable getAppIcon(java.lang.String)
     public static java.lang.String getAppPath()
     public static java.lang.String getAppPath(java.lang.String)
-    public static java.lang.String getAppVersionName()
-    public static java.lang.String getAppVersionName(java.lang.String)
     public static int getAppVersionCode()
     public static int getAppVersionCode(java.lang.String)
     public static boolean isSystemApp()
@@ -11593,7 +11433,6 @@ com.xuexiang.xutil.app.AppUtils:
     public static double getDoubleValueInMetaData(java.lang.String)
     public static varargs boolean cleanAppData(java.lang.String[])
     public static varargs boolean cleanAppData(java.io.File[])
-    private static boolean isSpace(java.lang.String)
     private static boolean isDeviceRooted()
     private static java.lang.String getInstallLocationParams()
     private static int getInstallLocation()
@@ -11625,8 +11464,6 @@ com.xuexiang.xui.widget.StickyNestedScrollView:
     public static final java.lang.String FLAG_NONCONSTANT
     public static final java.lang.String FLAG_HASTRANSPARENCY
     private static final int DEFAULT_SHADOW_HEIGHT
-com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker$1:
-    void <init>(com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker,com.xuexiang.xupdate.proxy.IUpdateProxy)
 com.bumptech.glide.gifdecoder.GifDecoder:
     public abstract int getWidth()
     public abstract int getHeight()
@@ -11678,11 +11515,6 @@ kotlin.contracts.ContractBuilder:
     public abstract kotlin.contracts.CallsInPlace callsInPlace(kotlin.Function,kotlin.contracts.InvocationKind)
 io.reactivex.subscribers.DefaultSubscriber:
     protected final void cancel()
-com.xuexiang.xaop.aspectj.SingleClickAspectJ:
-    public static boolean hasAspect()
-    public void withinAnnotatedClass()
-    public void methodInsideAnnotatedType()
-    public void method()
 io.reactivex.internal.schedulers.NewThreadScheduler:
     private static final java.lang.String THREAD_NAME_PREFIX
     private static final java.lang.String KEY_NEWTHREAD_PRIORITY
@@ -11917,10 +11749,6 @@ com.scwang.smartrefresh.header.MaterialHeader:
     protected static final float MAX_PROGRESS_ANGLE
     protected static final int CIRCLE_DIAMETER
     protected static final int CIRCLE_DIAMETER_LARGE
-com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section$2:
-    void <init>(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
-    public android.widget.RelativeLayout$LayoutParams onConfig(android.widget.RelativeLayout$LayoutParams)
-    final synthetic com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section this$0
 com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource:
     public static com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource obtain(android.content.Context,android.graphics.Bitmap)
     public static com.bumptech.glide.load.resource.bitmap.LazyBitmapDrawableResource obtain(android.content.res.Resources,com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool,android.graphics.Bitmap)
@@ -11989,6 +11817,7 @@ kotlin.concurrent.LocksKt:
     private static final java.lang.Object read(java.util.concurrent.locks.ReentrantReadWriteLock,kotlin.jvm.functions.Function0)
     private static final java.lang.Object write(java.util.concurrent.locks.ReentrantReadWriteLock,kotlin.jvm.functions.Function0)
 com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder:
+    public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder title(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder buttonRippleColor(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder buttonRippleColorRes(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder buttonRippleColorAttr(int)
@@ -12024,6 +11853,7 @@ com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder:
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder itemsCallbackMultiChoice(java.lang.Integer[],com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$ListCallbackMultiChoice)
     public varargs com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder itemsDisabledIndices(java.lang.Integer[])
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder alwaysCallMultiChoiceCallback()
+    public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder positiveText(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder positiveColor(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder positiveColorRes(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder positiveColorAttr(int)
@@ -12035,6 +11865,7 @@ com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder:
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder negativeColorRes(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder negativeColorAttr(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder negativeColor(android.content.res.ColorStateList)
+    public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder negativeText(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder negativeFocus(boolean)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder neutralColor(int)
     public com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog$Builder neutralColorRes(int)
@@ -12456,7 +12287,6 @@ com.jakewharton.disklrucache.DiskLruCache$Editor:
 com.xuexiang.xutil.display.ImageUtils:
     public static byte[] bitmap2Bytes(android.graphics.Bitmap,android.graphics.Bitmap$CompressFormat)
     public static android.graphics.Bitmap bytes2Bitmap(byte[])
-    public static android.graphics.Bitmap drawable2Bitmap(android.graphics.drawable.Drawable)
     public static android.graphics.drawable.Drawable bitmap2Drawable(android.graphics.Bitmap)
     public static byte[] drawable2Bytes(android.graphics.drawable.Drawable,android.graphics.Bitmap$CompressFormat)
     public static android.graphics.drawable.Drawable bytes2Drawable(byte[])
@@ -12522,10 +12352,8 @@ com.xuexiang.xutil.display.ImageUtils:
     public static android.graphics.Bitmap stackBlur(android.graphics.Bitmap,int)
     public static android.graphics.Bitmap stackBlur(android.graphics.Bitmap,int,boolean)
     public static boolean save(android.view.View,java.lang.String,android.graphics.Bitmap$CompressFormat)
-    public static boolean save(android.graphics.Bitmap,java.lang.String,android.graphics.Bitmap$CompressFormat)
     public static boolean save(android.graphics.Bitmap,java.io.File,android.graphics.Bitmap$CompressFormat)
     public static boolean save(android.graphics.Bitmap,java.lang.String,android.graphics.Bitmap$CompressFormat,boolean)
-    public static boolean save(android.graphics.Bitmap,java.io.File,android.graphics.Bitmap$CompressFormat,boolean)
     public static boolean save(android.graphics.Bitmap,java.io.OutputStream,android.graphics.Bitmap$CompressFormat)
     public static boolean save(android.graphics.Bitmap,java.io.OutputStream,android.graphics.Bitmap$CompressFormat,boolean)
     public static boolean isImage(java.io.File)
@@ -12539,7 +12367,6 @@ com.xuexiang.xutil.display.ImageUtils:
     private static boolean isGIF(byte[])
     private static boolean isPNG(byte[])
     private static boolean isBMP(byte[])
-    private static boolean isEmptyBitmap(android.graphics.Bitmap)
     public static android.graphics.Bitmap compressByScale(android.graphics.Bitmap,int,int)
     public static android.graphics.Bitmap compressByScale(android.graphics.Bitmap,int,int,boolean)
     public static android.graphics.Bitmap compressByScale(android.graphics.Bitmap,float,float)
@@ -12552,10 +12379,6 @@ com.xuexiang.xutil.display.ImageUtils:
     public static android.graphics.Bitmap compressBySampleSize(android.graphics.Bitmap,int,boolean)
     public static android.graphics.Bitmap compressBySampleSize(android.graphics.Bitmap,int,int)
     public static android.graphics.Bitmap compressBySampleSize(android.graphics.Bitmap,int,int,boolean)
-    private static java.io.File getFileByPath(java.lang.String)
-    private static boolean createFileByDeleteOldFile(java.io.File)
-    private static boolean createOrExistsDir(java.io.File)
-    private static boolean isSpace(java.lang.String)
     private static int calculateInSampleSize(android.graphics.BitmapFactory$Options,int,int)
     private static byte[] input2Byte(java.io.InputStream)
 com.xuexiang.xui.widget.tabbar.TabSegment:
@@ -12573,6 +12396,9 @@ com.xuexiang.xui.widget.tabbar.TabSegment:
     public static final int ICON_POSITION_RIGHT
     public static final int ICON_POSITION_BOTTOM
     private static final int NO_POSITION
+com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$3:
+    void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
+    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xui.widget.popupwindow.popup.XUISimplePopup:
     public void <init>(android.content.Context,java.lang.String[])
     public void <init>(android.content.Context,java.util.List)
@@ -12695,9 +12521,6 @@ com.just.agentweb.widget.indicator.IndicatorController:
 org.aspectj.lang.reflect.CodeSignature:
     public abstract java.lang.Class[] getParameterTypes()
     public abstract java.lang.Class[] getExceptionTypes()
-com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section$1:
-    void <init>(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section,com.xuexiang.xui.widget.grouplist.XUICommonListItemView)
-    final synthetic com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section this$0
 io.reactivex.internal.operators.single.SingleTimer:
     public void <init>(long,java.util.concurrent.TimeUnit,io.reactivex.Scheduler)
 com.xuexiang.xui.widget.banner.recycler.BannerLayout$OnBannerItemClickListener:
@@ -12758,8 +12581,6 @@ com.bumptech.glide.load.model.FileLoader:
     private static final java.lang.String TAG
 io.reactivex.internal.operators.completable.CompletableMergeDelayErrorIterable:
     public void <init>(java.lang.Iterable)
-com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker$2:
-    void <init>(com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker,com.xuexiang.xupdate.proxy.IUpdateProxy)
 org.aspectj.internal.lang.reflect.PointcutExpressionImpl:
     public void <init>(java.lang.String)
 com.xuexiang.xui.widget.dialog.BaseDialog:
@@ -13113,8 +12934,6 @@ kotlin.jvm.JvmName:
     public abstract java.lang.String name()
 io.reactivex.internal.operators.flowable.FlowableTake:
     public void <init>(io.reactivex.Flowable,long)
-com.xuexiang.xaop.annotation.Safe:
-    public abstract java.lang.String value()
 com.xuexiang.xui.utils.CountDownButtonHelper:
     public void <init>(android.widget.TextView,int)
     public void <init>(android.widget.TextView,int,int)
@@ -13129,11 +12948,6 @@ com.xuexiang.xui.utils.CountDownButtonHelper:
 com.xuexiang.xui.widget.tabbar.XUIItemViewsAdapter:
     public void replaceItem(int,java.lang.Object)
 com.xuexiang.xui.widget.popupwindow.bar.Cookie:
-    public void <init>(android.content.Context)
-    private void createInAnim()
-    private void createOutAnim()
-    public int getLayoutGravity()
-    public void setParams(com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params)
     public static final long DEFAULT_COOKIE_DURATION
 android.support.v4.media.session.MediaSessionCompatApi21$Callback:
     public abstract void onSetRating(java.lang.Object,android.os.Bundle)
@@ -13182,8 +12996,6 @@ io.reactivex.internal.operators.completable.CompletableTakeUntilCompletable:
 org.aspectj.lang.reflect.DeclarePrecedence:
     public abstract org.aspectj.lang.reflect.AjType getDeclaringType()
     public abstract org.aspectj.lang.reflect.TypePattern[] getPrecedenceOrder()
-com.xuexiang.xaop.checker.IThrowableHandler:
-    public abstract java.lang.Object handleThrowable(java.lang.String,java.lang.Throwable)
 com.bumptech.glide.load.resource.gif.GifFrameLoader:
     com.bumptech.glide.load.Transformation getFrameTransformation()
     int getLoopCount()
@@ -13466,8 +13278,6 @@ com.github.mikephil.charting.data.BubbleDataSet:
     public void setNormalizeSizeEnabled(boolean)
 com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker$3:
     public void onParseResult(com.xuexiang.xupdate.entity.UpdateEntity)
-com.xuexiang.xaop.annotation.Intercept:
-    public abstract int[] value()
 com.just.agentweb.core.web.AgentWebUIControllerImplBase:
     public void onSelectItemsPrompt(android.webkit.WebView,java.lang.String,java.lang.String[],android.os.Handler$Callback)
     public void onLoading(java.lang.String)
@@ -13492,25 +13302,12 @@ com.xuexiang.xupdate.widget.UpdateDialog:
     private android.widget.LinearLayout mLlClose
     private android.widget.ImageView mIvClose
 com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder:
-    public void <init>(android.app.Activity)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setIcon(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setTitle(java.lang.String)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setTitle(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setMessage(java.lang.String)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setMessage(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setDuration(long)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setTitleColor(int)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setMessageColor(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setBackgroundColor(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setActionColor(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setAction(java.lang.String,android.view.View$OnClickListener)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setAction(int,android.view.View$OnClickListener)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setActionWithIcon(int,android.view.View$OnClickListener)
     public com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Builder setLayoutGravity(int)
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar create()
-    public com.xuexiang.xui.widget.popupwindow.bar.CookieBar show()
-    private com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params params
-    public android.app.Activity context
 com.xuexiang.xui.widget.progress.materialprogressbar.internal.ObjectAnimatorCompatLollipop:
     public static varargs android.animation.ObjectAnimator ofArgb(java.lang.Object,java.lang.String,int[])
     public static varargs android.animation.ObjectAnimator ofArgb(java.lang.Object,android.util.Property,int[])
@@ -13521,8 +13318,6 @@ kotlin.ranges.ClosedFloatingPointRange:
     public abstract boolean contains(java.lang.Comparable)
     public abstract boolean isEmpty()
     public abstract boolean lessThanOrEquals(java.lang.Comparable,java.lang.Comparable)
-com.xuexiang.xaop.util.Utils:
-    public static java.lang.String getMethodName(org.aspectj.lang.ProceedingJoinPoint)
 com.bumptech.glide.load.engine.cache.DiskCache$Factory:
     public static final int DEFAULT_DISK_CACHE_SIZE
     public static final java.lang.String DEFAULT_DISK_CACHE_DIR
@@ -13535,6 +13330,8 @@ okio.Okio:
     public static varargs okio.Sink sink(java.nio.file.Path,java.nio.file.OpenOption[])
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy:
     public android.app.Dialog showTipDialog(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String)
     public android.app.Dialog showInputDialog(android.content.Context,int,java.lang.String,java.lang.String,com.xuexiang.xui.widget.dialog.strategy.InputInfo,com.xuexiang.xui.widget.dialog.strategy.InputCallback,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,java.lang.String[],android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,int,android.content.DialogInterface$OnClickListener)
@@ -13700,6 +13497,8 @@ io.github.inflationx.viewpump.ViewPumpContextWrapper$Companion:
     public final io.github.inflationx.viewpump.internal.-ViewPumpActivityFactory get$viewpump_release(android.app.Activity)
 com.xuexiang.xui.widget.dialog.strategy.IDialogStrategy:
     public abstract android.app.Dialog showTipDialog(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public abstract android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public abstract android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String)
     public abstract android.app.Dialog showInputDialog(android.content.Context,int,java.lang.String,java.lang.String,com.xuexiang.xui.widget.dialog.strategy.InputInfo,com.xuexiang.xui.widget.dialog.strategy.InputCallback,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
     public abstract android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,java.lang.String[],android.content.DialogInterface$OnClickListener)
     public abstract android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,int,android.content.DialogInterface$OnClickListener)
@@ -13768,9 +13567,6 @@ com.github.mikephil.charting.animation.ChartAnimator:
     public void setPhaseX(float)
 kotlin.coroutines.experimental.intrinsics.IntrinsicsKt__IntrinsicsJvmKt$createCoroutineUnchecked$$inlined$buildContinuationByInvokeCall$IntrinsicsKt__IntrinsicsJvmKt$1:
     public void <init>(kotlin.coroutines.experimental.Continuation,kotlin.jvm.functions.Function1,kotlin.coroutines.experimental.Continuation)
-com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl$2:
-    void <init>(com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    final synthetic com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl this$0
 org.aspectj.internal.lang.annotation.ajcDeclarePrecedence:
     public abstract java.lang.String value()
 io.reactivex.internal.operators.maybe.MaybeFlatMapCompletable:
@@ -13927,6 +13723,10 @@ android.support.v4.media.session.MediaControllerCompat$PlaybackInfo:
     public int getCurrentVolume()
     public static final int PLAYBACK_TYPE_LOCAL
     public static final int PLAYBACK_TYPE_REMOTE
+org.aspectj.runtime.CFlow:
+    public java.lang.Object getAspect()
+    public void setAspect(java.lang.Object)
+    public java.lang.Object get(int)
 com.github.mikephil.charting.interfaces.dataprovider.ChartInterface:
     public abstract float getXChartMin()
     public abstract float getXChartMax()
@@ -13937,10 +13737,6 @@ com.github.mikephil.charting.interfaces.dataprovider.ChartInterface:
     public abstract com.github.mikephil.charting.utils.MPPointF getCenterOffsets()
     public abstract android.graphics.RectF getContentRect()
     public abstract com.github.mikephil.charting.formatter.ValueFormatter getDefaultValueFormatter()
-org.aspectj.runtime.CFlow:
-    public java.lang.Object getAspect()
-    public void setAspect(java.lang.Object)
-    public java.lang.Object get(int)
 android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4:
     void <init>(android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21,android.support.v4.media.MediaBrowserCompat$SearchCallback,java.lang.String,android.os.Bundle)
     final synthetic android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21 this$0
@@ -14057,17 +13853,6 @@ io.reactivex.processors.MulticastProcessor:
 com.scwang.smartrefresh.layout.SmartRefreshLayout$8:
     void <init>(com.scwang.smartrefresh.layout.SmartRefreshLayout,float,int,boolean)
 com.xuexiang.xupdate._XUpdate:
-    public static boolean isShowUpdatePrompter()
-    public static java.util.Map getParams()
-    public static com.xuexiang.xupdate.proxy.IUpdateHttpService getIUpdateHttpService()
-    public static com.xuexiang.xupdate.proxy.IUpdateChecker getIUpdateChecker()
-    public static com.xuexiang.xupdate.proxy.IUpdateParser getIUpdateParser()
-    public static com.xuexiang.xupdate.proxy.IUpdatePrompter getIUpdatePrompter()
-    public static com.xuexiang.xupdate.proxy.IUpdateDownloader getIUpdateDownLoader()
-    public static boolean isGet()
-    public static boolean isWifiOnly()
-    public static boolean isAutoMode()
-    public static java.lang.String getApkCacheDir()
     public static java.lang.String encryptFile(java.io.File)
     public static com.xuexiang.xupdate.listener.OnInstallListener getOnInstallListener()
     public static void startInstallApk(android.content.Context,java.io.File)
@@ -14078,7 +13863,6 @@ com.xuexiang.xpage.base.XPageFragment:
     public void popToBackForResult(com.xuexiang.xpage.base.XPageFragment$PopCallback)
     public com.xuexiang.xpage.base.XPageFragment setSwitcher(com.xuexiang.xpage.core.CoreSwitcher)
     public boolean isFragmentTop(java.lang.String)
-    public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class)
     public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class,boolean)
     public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class,android.os.Bundle)
     public com.xuexiang.xpage.base.XPageFragment openPage(java.lang.Class,android.os.Bundle,com.xuexiang.xpage.enums.CoreAnim)
@@ -14094,16 +13878,6 @@ com.xuexiang.xpage.base.XPageFragment:
     public final androidx.fragment.app.Fragment openPageForResult(boolean,java.lang.String,android.os.Bundle,int[],int)
 io.reactivex.internal.operators.flowable.FlowableRetryWhen:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function)
-com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params:
-    public java.lang.String title
-    public java.lang.String message
-    public java.lang.String action
-    public int actionIcon
-    public int iconResId
-    public int backgroundColor
-    public int titleColor
-    public int messageColor
-    public int actionColor
 io.reactivex.subjects.CompletableSubject:
     public static io.reactivex.subjects.CompletableSubject create()
     public java.lang.Throwable getThrowable()
@@ -14235,7 +14009,6 @@ okhttp3.internal.http2.Http2Connection:
     public void setSettings(okhttp3.internal.http2.Settings)
     private static final int OKHTTP_CLIENT_WINDOW_SIZE
 com.xuexiang.xaop.cache.core.ICache:
-    public abstract boolean save(java.lang.String,java.lang.Object)
     public abstract boolean containsKey(java.lang.String)
     public abstract boolean remove(java.lang.String)
     public abstract boolean clear()
@@ -14553,15 +14326,6 @@ com.xuexiang.xutil.system.PermissionUtils$1:
     public void again(boolean)
 com.bumptech.glide.load.data.InputStreamRewinder:
     private static final int MARK_READ_LIMIT
-com.xuexiang.qqgg.adapter.entity.Sort:
-    public boolean isFlag()
-    public void setFlag(boolean)
-    public int getId()
-    public void setId(int)
-    public void setName(java.lang.String)
-    public void setImg(int)
-    public int getIncome()
-    public void setIncome(int)
 butterknife.BindDrawable:
     public abstract int value()
     public abstract int tint()
@@ -14584,12 +14348,6 @@ com.xuexiang.xui.adapter.recyclerview.DividerItemDecoration:
     public void <init>(android.content.Context,int,int,int)
     public void <init>(android.content.Context,int,int,int,int)
     public com.xuexiang.xui.adapter.recyclerview.DividerItemDecoration setDivider(android.graphics.drawable.Drawable)
-com.xuexiang.xhttp2.callback.CallBackProxy:
-    public void <init>(com.xuexiang.xhttp2.callback.CallBack)
-    public com.xuexiang.xhttp2.callback.CallBack getCallBack()
-    public java.lang.reflect.Type getType()
-    public java.lang.reflect.Type getRawType()
-    com.xuexiang.xhttp2.callback.CallBack mCallBack
 io.reactivex.observers.ResourceCompletableObserver:
     public final void add(io.reactivex.disposables.Disposable)
 okio.HashingSink:
@@ -14611,8 +14369,6 @@ com.bumptech.glide.load.model.stream.HttpUriLoader$Factory:
     public void teardown()
 io.reactivex.internal.operators.maybe.MaybeDelaySubscriptionOtherPublisher:
     public void <init>(io.reactivex.MaybeSource,org.reactivestreams.Publisher)
-com.xuexiang.xui.widget.grouplist.XUICommonListItemView$LayoutParamConfig:
-    public abstract android.widget.RelativeLayout$LayoutParams onConfig(android.widget.RelativeLayout$LayoutParams)
 com.xuexiang.xui.widget.progress.HorizontalProgressView:
     public void startProgressAnimation()
     public void stopProgressAnimation()
@@ -14664,9 +14420,6 @@ com.xuexiang.xui.widget.edittext.ClearEditText:
     public com.xuexiang.xui.widget.edittext.ClearEditText setExtraClickAreaSize(int)
 io.reactivex.internal.operators.flowable.FlowableConcatMapEager:
     public void <init>(io.reactivex.Flowable,io.reactivex.functions.Function,int,int,io.reactivex.internal.util.ErrorMode)
-com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl$1:
-    void <init>(com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl,com.xuexiang.xupdate.proxy.IUpdateHttpService$Callback)
-    final synthetic com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl this$0
 com.just.agentweb.core.web.AgentWebConfig:
     public static void removeExpiredCookies()
     public static void removeAllCookies()
@@ -14757,12 +14510,7 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$14:
     void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xaop.util.AppExecutors:
-    public static com.xuexiang.xaop.util.AppExecutors get()
     public com.xuexiang.xaop.util.AppExecutors updatePoolIO(int)
-    public java.util.concurrent.ExecutorService singleIO()
-    public java.util.concurrent.ExecutorService poolIO()
-    public java.util.concurrent.Executor mainThread()
-    private static com.xuexiang.xaop.util.AppExecutors sInstance
 com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder:
     public com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder setCrossFadeEnabled(boolean)
     public com.bumptech.glide.request.transition.DrawableCrossFadeFactory build()
@@ -14969,6 +14717,8 @@ com.xuexiang.xutil.data.ConvertTools:
     public static void fillUnsignedShortToBytesBigEndian(int,byte[],int)
     public static short bytesToShortLittleEndian(byte[],int)
     public static short bytesToShortBigEndian(byte[],int)
+com.xuexiang.qqgg.fragment.SponsorFragment:
+    public void goWeb(java.lang.String)
 android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi28:
     void <init>(android.content.Context,java.lang.String,android.os.Bundle)
     void <init>(java.lang.Object)
@@ -15030,6 +14780,9 @@ kotlin.reflect.KTypeProjection$Companion:
     public final kotlin.reflect.KTypeProjection covariant(kotlin.reflect.KType)
 com.bumptech.glide.load.data.AssetPathFetcher:
     private static final java.lang.String TAG
+com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$6:
+    void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy)
+    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xui.widget.imageview.edit.CustomEffect$Builder:
     public void <init>(java.lang.String)
     static synthetic java.lang.String access$000(com.xuexiang.xui.widget.imageview.edit.CustomEffect$Builder)
@@ -15553,9 +15306,6 @@ com.scwang.smartrefresh.header.flyrefresh.MountainSceneView:
     protected static final int HEIGHT
     protected static final int TREE_WIDTH
     protected static final int TREE_HEIGHT
-com.xuexiang.xhttp2.request.BaseRequest$5:
-    void <init>(com.xuexiang.xhttp2.request.BaseRequest)
-    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 kotlin.text.Typography:
     public static final char quote
     public static final char dollar
@@ -15664,6 +15414,8 @@ com.xuexiang.xrouter.launcher._XRouter:
     static void setLogger(com.xuexiang.xrouter.logs.ILogger)
     protected java.lang.Object navigation(android.app.Fragment,com.xuexiang.xrouter.facade.Postcard,int,com.xuexiang.xrouter.facade.callback.NavigationCallback)
     protected java.lang.Object navigation(androidx.fragment.app.Fragment,com.xuexiang.xrouter.facade.Postcard,int,com.xuexiang.xrouter.facade.callback.NavigationCallback)
+com.xuexiang.xupdate.widget.UpdateDialog$1:
+    void <init>(com.xuexiang.xupdate.widget.UpdateDialog)
 com.xuexiang.xhttp2.utils.HttpUtils:
     public static okhttp3.RequestBody getJsonRequestBody(java.lang.Object)
     public static okhttp3.RequestBody getJsonRequestBody(java.lang.String)
@@ -15706,6 +15458,7 @@ com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog:
     public void setPromptCheckBoxChecked(boolean)
     public final android.widget.TextView getTitleView()
     public android.widget.ImageView getIconView()
+    public final android.widget.TextView getContentView()
     public final android.view.View getCustomView()
     public final void setActionButton(com.xuexiang.xui.widget.dialog.materialdialog.DialogAction,java.lang.CharSequence)
     public final void setActionButton(com.xuexiang.xui.widget.dialog.materialdialog.DialogAction,int)
@@ -15715,6 +15468,7 @@ com.xuexiang.xui.widget.dialog.materialdialog.MaterialDialog:
     public void setIcon(int)
     public void setIcon(android.graphics.drawable.Drawable)
     public void setIconAttribute(int)
+    public final void setContent(java.lang.CharSequence)
     public final void setContent(int)
     public final varargs void setContent(int,java.lang.Object[])
     public final java.util.ArrayList getItems()
@@ -15854,7 +15608,6 @@ com.xuexiang.xui.utils.ViewUtils:
     public static void checkAppCompatTheme(android.content.Context)
     public static android.view.View getActivityRoot(android.app.Activity)
     public static void requestApplyInsets(android.view.Window)
-    public static void setBackgroundKeepingPadding(android.view.View,int)
     public static void playBackgroundBlinkAnimation(android.view.View,int)
     public static android.animation.Animator playViewBackgroundAnimation(android.view.View,int,int[],int,java.lang.Runnable)
     public static void playViewBackgroundAnimation(android.view.View,int,int[],int)
@@ -16255,9 +16008,6 @@ io.reactivex.internal.operators.maybe.MaybeMap:
 com.xuexiang.xui.widget.button.shadowbutton.BaseShadowButton:
     public static final int SHAPE_TYPE_ROUND
     public static final int SHAPE_TYPE_RECTANGLE
-com.xuexiang.xupdate.proxy.impl.DefaultUpdateChecker:
-    public void onBeforeCheck()
-    public void checkVersion(boolean,java.lang.String,java.util.Map,com.xuexiang.xupdate.proxy.IUpdateProxy)
 com.xuexiang.xui.adapter.recyclerview.sticky.FullSpanUtils$1:
     void <init>(androidx.recyclerview.widget.RecyclerView$Adapter,int,androidx.recyclerview.widget.GridLayoutManager,androidx.recyclerview.widget.GridLayoutManager$SpanSizeLookup)
 com.just.agentweb.download.DownloadNotifier:
@@ -16314,6 +16064,9 @@ butterknife.OnFocusChange:
     public abstract int[] value()
 com.scwang.smartrefresh.layout.util.ViscousFluidInterpolator:
     private static final float VISCOUS_FLUID_SCALE
+com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$7:
+    void <init>(com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy,android.content.DialogInterface$OnClickListener)
+    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 kotlin.random.PlatformRandom:
     public void <init>(java.util.Random)
 org.intellij.lang.annotations.Subst:
@@ -16448,8 +16201,6 @@ android.support.v4.media.session.MediaSessionCompat$Callback$StubApi21:
 io.reactivex.internal.operators.maybe.MaybeFromFuture:
     public void <init>(java.util.concurrent.Future,long,java.util.concurrent.TimeUnit)
 com.xuexiang.xupdate.UpdateManager$Builder:
-    void <init>(android.content.Context)
-    public com.xuexiang.xupdate.UpdateManager$Builder updateUrl(java.lang.String)
     public com.xuexiang.xupdate.UpdateManager$Builder params(java.util.Map)
     public com.xuexiang.xupdate.UpdateManager$Builder param(java.lang.String,java.lang.Object)
     public com.xuexiang.xupdate.UpdateManager$Builder updateHttpService(com.xuexiang.xupdate.proxy.IUpdateHttpService)
@@ -16471,23 +16222,7 @@ com.xuexiang.xupdate.UpdateManager$Builder:
     public com.xuexiang.xupdate.UpdateManager$Builder promptHeightRatio(float)
     public com.xuexiang.xupdate.UpdateManager$Builder promptStyle(com.xuexiang.xupdate.entity.PromptEntity)
     public com.xuexiang.xupdate.UpdateManager$Builder updateDownLoader(com.xuexiang.xupdate.proxy.IUpdateDownloader)
-    public com.xuexiang.xupdate.UpdateManager build()
-    public void update()
     public void update(com.xuexiang.xupdate.proxy.IUpdateProxy)
-    android.content.Context context
-    java.lang.String updateUrl
-    java.util.Map params
-    com.xuexiang.xupdate.proxy.IUpdateHttpService updateHttpService
-    com.xuexiang.xupdate.proxy.IUpdateParser updateParser
-    boolean isGet
-    boolean isWifiOnly
-    boolean isAutoMode
-    com.xuexiang.xupdate.proxy.IUpdateChecker updateChecker
-    com.xuexiang.xupdate.entity.PromptEntity promptEntity
-    com.xuexiang.xupdate.proxy.IUpdatePrompter updatePrompter
-    com.xuexiang.xupdate.proxy.IUpdateDownloader updateDownLoader
-    com.xuexiang.xupdate.service.OnFileDownloadListener onFileDownloadListener
-    java.lang.String apkCacheDir
 io.reactivex.internal.util.MergerBiFunction:
     public void <init>(java.util.Comparator)
 com.bumptech.glide.request.target.ImageViewTarget:
@@ -17125,7 +16860,6 @@ com.xuexiang.xui.widget.button.shinebutton.ShineButton$OnClickListenWrapper:
     public void <init>(com.xuexiang.xui.widget.button.shinebutton.ShineButton,android.view.View$OnClickListener)
 com.xuexiang.xutil.file.CloseUtils:
     public static varargs void closeIO(java.io.Closeable[])
-    public static varargs void closeIOQuietly(java.io.Closeable[])
 org.aspectj.lang.reflect.DeclareParents:
     public abstract org.aspectj.lang.reflect.AjType getDeclaringType()
     public abstract org.aspectj.lang.reflect.TypePattern getTargetTypesPattern()
@@ -18113,7 +17847,6 @@ com.xuexiang.xaop.logger.XLogger:
     public static void eTag(java.lang.String,java.lang.String,java.lang.Throwable)
     public static void wtf(java.lang.String)
     public static void wtfTag(java.lang.String,java.lang.String)
-    public static void log(int,java.lang.String,java.lang.String)
     public static final java.lang.String DEFAULT_LOG_TAG
     private static final int MAX_LOG_PRIORITY
     private static final int MIN_LOG_PRIORITY
@@ -18143,38 +17876,18 @@ com.xuexiang.xui.adapter.recyclerview.sticky.StickyItemDecoration:
     public void enableStickyHead(boolean)
     public void recycle()
 com.xuexiang.xui.widget.grouplist.XUIGroupListView:
-    public static com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section newSection(android.content.Context)
-    private void addSection(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
     private void removeSection(com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
-    static synthetic void access$200(com.xuexiang.xui.widget.grouplist.XUIGroupListView,com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
     static synthetic void access$300(com.xuexiang.xui.widget.grouplist.XUIGroupListView,com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section)
-    public com.xuexiang.xui.widget.grouplist.XUICommonListItemView createItemView(android.graphics.drawable.Drawable,java.lang.CharSequence,java.lang.String,int,int,int)
-    public com.xuexiang.xui.widget.grouplist.XUICommonListItemView createItemView(android.graphics.drawable.Drawable,java.lang.CharSequence,java.lang.String,int,int)
-    public com.xuexiang.xui.widget.grouplist.XUICommonListItemView createItemView(java.lang.CharSequence)
     public com.xuexiang.xui.widget.grouplist.XUICommonListItemView createItemView(int)
     public com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section getSection(int)
     public static final int SEPARATOR_STYLE_NORMAL
     public static final int SEPARATOR_STYLE_NONE
 com.xuexiang.xaop.cache.core.LruMemoryCache:
-    public boolean save(java.lang.String,java.lang.Object)
     public boolean containsKey(java.lang.String)
     public boolean remove(java.lang.String)
     public boolean clear()
 com.xuexiang.xui.widget.textview.label.LabelView:
     public void remove()
-com.xuexiang.qqgg.adapter.entity.MultiQuery:
-    public java.lang.Integer getId()
-    public void setId(java.lang.Integer)
-    public java.lang.String getSortType()
-    public void setSortType(java.lang.String)
-    public java.lang.String getStartTime()
-    public java.lang.String getEndTime()
-    public java.lang.Integer getIncome()
-    public void setIncome(java.lang.Integer)
-    public java.lang.Integer getPage()
-    public void setPage(java.lang.Integer)
-    public java.lang.Integer getLimit()
-    public void setLimit(java.lang.Integer)
 butterknife.BindFloat:
     public abstract int value()
 io.reactivex.observers.DefaultObserver:
@@ -18384,7 +18097,6 @@ kotlin.collections.CollectionsKt___CollectionsJvmKt:
     public static final java.util.SortedSet toSortedSet(java.lang.Iterable)
     public static final java.util.SortedSet toSortedSet(java.lang.Iterable,java.util.Comparator)
 com.xuexiang.qqgg.utils.sdkinit.XUpdateInit:
-    public static void checkUpdate(android.content.Context,boolean)
     private static final java.lang.String KEY_UPDATE_URL
 com.xuexiang.qqgg.utils.sdkinit.ANRWatchDogInit:
     public static com.github.anrwatchdog.ANRWatchDog getANRWatchDog()
@@ -18424,7 +18136,6 @@ kotlin.contracts.SimpleEffect:
 kotlin.jvm.functions.Function6:
     public abstract java.lang.Object invoke(java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object,java.lang.Object)
 com.xuexiang.xhttp2.request.CustomRequest:
-    private void checkValidate()
     public java.lang.Object create(java.lang.Class)
     public io.reactivex.Observable apiCall(io.reactivex.Observable)
     public io.reactivex.disposables.Disposable apiCall(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBack)
@@ -18432,7 +18143,6 @@ com.xuexiang.xhttp2.request.CustomRequest:
     public void call(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBack)
     public void call(io.reactivex.Observable,io.reactivex.Observer)
     public io.reactivex.disposables.Disposable call(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBackProxy)
-    protected io.reactivex.Observable toObservable(io.reactivex.Observable,com.xuexiang.xhttp2.callback.CallBackProxy)
 com.scwang.smartrefresh.header.StoreHouseHeader:
     public com.scwang.smartrefresh.header.StoreHouseHeader setLoadingAniDuration(int)
     public com.scwang.smartrefresh.header.StoreHouseHeader setLineWidth(int)
@@ -18508,8 +18218,6 @@ io.reactivex.internal.operators.single.SingleFromPublisher:
     public void <init>(org.reactivestreams.Publisher)
 com.xuexiang.xaop.cache.XCache:
     public java.lang.Object load(java.lang.String,long)
-    public java.lang.Object load(java.lang.reflect.Type,java.lang.String,long)
-    public boolean save(java.lang.String,java.lang.Object)
     public boolean containsKey(java.lang.String)
     public boolean remove(java.lang.String)
     public boolean clear()
@@ -18683,6 +18391,8 @@ kotlin.jvm.internal.DoubleSpreadBuilder:
 com.xuexiang.xui.widget.dialog.strategy.impl.AlertDialogStrategy:
     private android.app.AlertDialog$Builder getBuilder(android.content.Context,int)
     public android.app.Dialog showTipDialog(android.content.Context,int,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
+    public android.app.Dialog showConfirmDialog(android.content.Context,java.lang.String,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String)
     public android.app.Dialog showInputDialog(android.content.Context,int,java.lang.String,java.lang.String,com.xuexiang.xui.widget.dialog.strategy.InputInfo,com.xuexiang.xui.widget.dialog.strategy.InputCallback,java.lang.String,android.content.DialogInterface$OnClickListener,java.lang.String,android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,java.lang.String[],android.content.DialogInterface$OnClickListener)
     public android.app.Dialog showContextMenuDialog(android.content.Context,java.lang.String,int,android.content.DialogInterface$OnClickListener)
@@ -18853,6 +18563,45 @@ kotlin.jvm.internal.SpreadBuilder:
     public void add(java.lang.Object)
     public java.lang.Object[] toArray(java.lang.Object[])
     private final java.util.ArrayList list
+com.xuexiang.qqgg.utils.SocialShareUtils:
+    private static java.util.ArrayList getMediaUrisFromPaths(java.util.List)
+    public static varargs void shareMultiplePicture(android.app.Activity,java.lang.String[])
+    public static void shareMultiplePicture(android.app.Activity,java.util.List)
+    public static varargs void shareMultiplePictureToWeChatCircle(android.app.Activity,java.lang.String,java.lang.String[])
+    public static void shareMultiplePictureToWeChatCircle(android.app.Activity,java.lang.String,java.util.List)
+    public static varargs void shareMultiplePictureToWeChatContacts(android.app.Activity,java.lang.String,java.lang.String[])
+    public static void shareMultiplePictureToWeChatContacts(android.app.Activity,java.lang.String,java.util.List)
+    public static varargs boolean shareMultiplePictureForResult(android.app.Activity,java.lang.String[])
+    public static boolean shareMultiplePictureForResult(android.app.Activity,java.util.List)
+    public static varargs boolean shareMultiplePictureToWeChatCircleForResult(android.app.Activity,java.lang.String,java.lang.String[])
+    public static boolean shareMultiplePictureToWeChatCircleForResult(android.app.Activity,java.lang.String,java.util.List)
+    public static varargs boolean shareMultiplePictureToWeChatContactsForResult(android.app.Activity,java.lang.String,java.lang.String[])
+    public static boolean shareMultiplePictureToWeChatContactsForResult(android.app.Activity,java.lang.String,java.util.List)
+    public static void sharePicture(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static void sharePictureToWeChatCircle(android.app.Activity,android.net.Uri)
+    public static void sharePictureToWeChatContacts(android.app.Activity,android.net.Uri)
+    public static void sharePicture(android.app.Activity,java.io.File)
+    public static boolean sharePictureForResult(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static boolean sharePictureToWeChatCircleForResult(android.app.Activity,android.net.Uri)
+    public static boolean sharePictureToWeChatContactsForResult(android.app.Activity,android.net.Uri)
+    public static boolean sharePictureForResult(android.app.Activity,java.io.File)
+    public static boolean sharePictureForResult(android.app.Activity,android.net.Uri)
+    public static void shareVideo(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static void shareVideoToWeChatContacts(android.app.Activity,android.net.Uri)
+    public static void shareVideo(android.app.Activity,java.io.File)
+    public static void shareVideo(android.app.Activity,android.net.Uri)
+    public static boolean shareVideoForResult(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static boolean shareVideoToWeChatContactsForResult(android.app.Activity,android.net.Uri)
+    public static boolean shareVideoForResult(android.app.Activity,java.io.File)
+    public static boolean shareVideoForResult(android.app.Activity,android.net.Uri)
+    public static void shareFile(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static void shareFileToWeChatContacts(android.app.Activity,android.net.Uri)
+    public static void shareFile(android.app.Activity,android.net.Uri)
+    public static void shareFile(android.app.Activity,android.content.ComponentName,java.io.File,java.lang.String,java.lang.String)
+    public static boolean shareFileForResult(android.app.Activity,android.net.Uri,com.xuexiang.qqgg.utils.SocialShareUtils$ShareType)
+    public static boolean shareFileToWeChatContactsForResult(android.app.Activity,android.net.Uri)
+    public static boolean shareFileForResult(android.app.Activity,android.net.Uri)
+    public static boolean shareFileForResult(android.app.Activity,android.content.ComponentName,java.io.File,java.lang.String,java.lang.String)
 kotlin.UByte:
     public static synthetic void data$annotations()
     private static int compareTo-7apg3OU(byte,byte)
@@ -19489,8 +19238,6 @@ kotlin.ranges.UIntProgression:
     public static final kotlin.ranges.UIntProgression$Companion Companion
 com.xuexiang.xui.widget.behavior.BaseBehavior:
     protected final int mTouchSlop
-com.meituan.android.walle.ChannelInfo:
-    private final java.util.Map extraInfo
 com.xuexiang.xui.widget.searchview.SearchAdapter$SuggestionsViewHolder:
     final synthetic com.xuexiang.xui.widget.searchview.SearchAdapter this$0
 com.xuexiang.xutil.security.Base64Utils:
@@ -19526,9 +19273,6 @@ io.reactivex.internal.operators.maybe.MaybeEmpty:
     public static final io.reactivex.internal.operators.maybe.MaybeEmpty INSTANCE
 com.just.agentweb.core.AgentWeb$AgentBuilder:
     private androidx.fragment.app.Fragment mFragment
-com.xuexiang.xaop.aspectj.InterceptAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.InterceptAspectJ ajc$perSingletonInstance
 com.xuexiang.xui.widget.textview.MarqueeTextView:
     private boolean mIsRolling
     private final java.lang.Object mLock
@@ -19678,6 +19422,8 @@ io.reactivex.schedulers.Schedulers:
 com.xuexiang.xutil.file.FileIOUtils:
     private static final java.lang.String LINE_SEP
     private static int sBufferSize
+com.xuexiang.xui.widget.popupwindow.bar.Cookie$4:
+    final synthetic com.xuexiang.xui.widget.popupwindow.bar.Cookie this$0
 com.xuexiang.xpage.base.XPageActivity$3:
     final synthetic com.xuexiang.xpage.base.XPageFragment val$opener
     final synthetic com.xuexiang.xpage.base.XPageActivity this$0
@@ -19700,6 +19446,8 @@ kotlin.jvm.internal.DoubleCompanionObject:
     private static final double NEGATIVE_INFINITY
     private static final double NaN
     public static final kotlin.jvm.internal.DoubleCompanionObject INSTANCE
+com.xuexiang.qqgg.fragment.month.MonthFragment$5:
+    final synthetic com.xuexiang.qqgg.fragment.month.MonthFragment this$0
 okhttp3.ConnectionPool:
     static final synthetic boolean $assertionsDisabled
 org.reactivestreams.FlowAdapters$FlowToReactiveSubscription:
@@ -19727,6 +19475,8 @@ kotlin.jvm.internal.ByteCompanionObject:
     public static final kotlin.jvm.internal.ByteCompanionObject INSTANCE
 com.xuexiang.xpage.base.XPageActivity$2:
     final synthetic com.xuexiang.xpage.base.XPageActivity this$0
+com.xuexiang.xhttp2.request.BaseRequest$3:
+    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 com.xuexiang.xui.widget.imageview.edit.SaveSettings$Builder:
     private boolean isTransparencyEnabled
     private boolean isClearViewsEnabled
@@ -19768,8 +19518,6 @@ com.bumptech.glide.RequestBuilder:
     protected static final com.bumptech.glide.request.RequestOptions DOWNLOAD_ONLY_OPTIONS
 com.xuexiang.xhttp2.reflect.TypeToken:
     private final java.lang.reflect.Type type
-com.xuexiang.qqgg.fragment.month.MonthFragment$4:
-    final synthetic com.xuexiang.qqgg.fragment.month.MonthFragment this$0
 com.bumptech.glide.load.model.ModelCache$1:
     final synthetic com.bumptech.glide.load.model.ModelCache this$0
 com.alibaba.android.vlayout.layout.FloatLayoutHelper:
@@ -19800,32 +19548,19 @@ com.xuexiang.xpage.utils.TitleBar:
     private int mActionPadding
     private int mActionTextSize
     private int mActionTextColor
-com.xuexiang.xaop.aspectj.IOThreadAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.IOThreadAspectJ ajc$perSingletonInstance
+com.xuexiang.xhttp2.request.BaseRequest$4:
+    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 com.github.mikephil.charting.components.YAxis:
     private boolean mUseAutoScaleRestrictionMin
     private boolean mUseAutoScaleRestrictionMax
 com.just.agentweb.core.client.MiddlewareWebClientBase:
     private static java.lang.String TAG
-com.xuexiang.xaop.aspectj.DebugLogAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.DebugLogAspectJ ajc$perSingletonInstance
 com.xuexiang.xui.utils.SpanUtils$CustomImageSpan:
     final synthetic com.xuexiang.xui.utils.SpanUtils this$0
 com.scwang.smartrefresh.layout.adapter.SmartViewHolder:
     private final android.util.SparseArray mViews
 com.bumptech.glide.load.model.ByteArrayLoader$StreamFactory$1:
     final synthetic com.bumptech.glide.load.model.ByteArrayLoader$StreamFactory this$0
-com.xuexiang.xupdate.XUpdate:
-    boolean mIsGet
-    boolean mIsWifiOnly
-    boolean mIsAutoMode
-    com.xuexiang.xupdate.proxy.IUpdateHttpService mIUpdateHttpService
-    com.xuexiang.xupdate.proxy.IUpdateChecker mIUpdateChecker
-    com.xuexiang.xupdate.proxy.IUpdateParser mIUpdateParser
-    com.xuexiang.xupdate.proxy.IUpdatePrompter mIUpdatePrompter
-    com.xuexiang.xupdate.proxy.IUpdateDownloader mIUpdateDownloader
 kotlin.sequences.EmptySequence:
     public static final kotlin.sequences.EmptySequence INSTANCE
 com.bumptech.glide.util.LruCache:
@@ -19841,9 +19576,6 @@ kotlin.coroutines.jvm.internal.RunSuspend:
     private kotlin.Result result
 com.xuexiang.xui.widget.imageview.crop.CropOverlayView:
     public android.graphics.Bitmap mBitmap
-com.xuexiang.xaop.aspectj.MainThreadAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.MainThreadAspectJ ajc$perSingletonInstance
 com.just.agentweb.core.web.controller.DefaultUIController$4:
     final synthetic com.just.agentweb.core.web.controller.DefaultUIController this$0
 com.github.mikephil.charting.listener.PieRadarChartTouchListener$AngularVelocitySample:
@@ -19957,9 +19689,6 @@ org.reactivestreams.FlowAdapters$FlowToReactiveSubscriber:
     final org.reactivestreams.Subscriber reactiveStreams
 com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy$3:
     final synthetic com.xuexiang.xui.widget.imageview.strategy.impl.GlideImageLoadStrategy this$0
-com.xuexiang.xaop.aspectj.DiskCacheAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.DiskCacheAspectJ ajc$perSingletonInstance
 com.just.agentweb.core.web.AbsAgentWebSettings:
     protected com.just.agentweb.core.AgentWeb mAgentWeb
 com.xuexiang.xrouter.thread.DefaultThreadFactory$1:
@@ -19968,6 +19697,8 @@ kotlin.jvm.internal.ShortCompanionObject:
     public static final kotlin.jvm.internal.ShortCompanionObject INSTANCE
 okhttp3.Cache$CacheResponseBody$1:
     final synthetic okhttp3.Cache$CacheResponseBody this$0
+com.xuexiang.xaop.aspectj.MainThreadAspectJ$1:
+    final synthetic com.xuexiang.xaop.aspectj.MainThreadAspectJ this$0
 com.xuexiang.xupdate.UpdateManager$1:
     final synthetic com.xuexiang.xupdate.listener.IUpdateParseCallback val$callback
     final synthetic com.xuexiang.xupdate.UpdateManager this$0
@@ -19992,9 +19723,6 @@ com.xuexiang.xutil.data.DateUtils:
     private static final java.lang.String[] CHINESE_ZODIAC
     private static final int[] ZODIAC_FLAGS
     private static final java.lang.String[] ZODIAC
-com.xuexiang.xaop.aspectj.SafeAspectJ:
-    private static synthetic java.lang.Throwable ajc$initFailureCause
-    public static final synthetic com.xuexiang.xaop.aspectj.SafeAspectJ ajc$perSingletonInstance
 io.reactivex.internal.operators.single.SingleNever:
     public static final io.reactivex.Single INSTANCE
 com.bumptech.glide.load.model.LazyHeaders$Builder:
@@ -20012,8 +19740,6 @@ io.reactivex.internal.subscribers.BlockingBaseSubscriber:
     java.lang.Throwable error
 com.bumptech.glide.util.ViewPreloadSizeProvider:
     private com.bumptech.glide.util.ViewPreloadSizeProvider$SizeViewTarget viewTarget
-com.xuexiang.xaop.cache.XDiskCache:
-    private com.xuexiang.xaop.cache.XCache mXCache
 io.reactivex.internal.operators.flowable.FlowableWithLatestFrom$FlowableWithLatestSubscriber:
     final synthetic io.reactivex.internal.operators.flowable.FlowableWithLatestFrom this$0
 com.bumptech.glide.Glide:
@@ -20056,8 +19782,6 @@ com.scwang.smartrefresh.header.WaveSwipeHeader$ProgressAnimationImageView:
     final synthetic com.scwang.smartrefresh.header.WaveSwipeHeader this$0
 com.alibaba.android.vlayout.layout.GridLayoutHelper:
     private boolean mIgnoreExtra
-com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$2:
-    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 io.github.inflationx.viewpump.Interceptor:
     public static final io.github.inflationx.viewpump.Interceptor$Companion Companion
 com.jakewharton.disklrucache.Util:
@@ -20107,10 +19831,10 @@ com.xuexiang.xui.widget.imageview.preview.loader.GlideMediaLoader$1:
     final synthetic com.xuexiang.xui.widget.imageview.preview.loader.GlideMediaLoader this$0
 com.jakewharton.disklrucache.DiskLruCache$Editor:
     private boolean committed
-com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$3:
-    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl$3:
     final synthetic com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl this$0
+com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section$1:
+    final synthetic com.xuexiang.xui.widget.grouplist.XUIGroupListView$Section this$0
 com.xuexiang.xhttp2.interceptor.BaseDynamicInterceptor:
     private boolean mIsSign
     private boolean mTimeStamp
@@ -20128,9 +19852,6 @@ com.xuexiang.xui.widget.textview.supertextview.SuperButton:
     private int gradientAngle
 com.xuexiang.xui.widget.textview.marqueen.MarqueeFactory:
     private com.xuexiang.xui.widget.textview.marqueen.MarqueeView mMarqueeView
-com.xuexiang.xui.widget.popupwindow.bar.Cookie:
-    private android.widget.ImageView mIvIcon
-    private android.widget.ImageView mBtnActionWithIcon
 com.xuexiang.qqgg.core.webview.XPageWebViewFragment_ViewBinding$1:
     final synthetic com.xuexiang.qqgg.core.webview.XPageWebViewFragment_ViewBinding this$0
 com.bumptech.glide.load.resource.gif.GifFrameLoader:
@@ -20195,8 +19916,8 @@ kotlin.coroutines.SafeContinuation:
     public static final kotlin.coroutines.SafeContinuation$Companion Companion
 com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$4:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
-com.xuexiang.qqgg.utils.Utils$1$2$2:
-    final synthetic com.xuexiang.qqgg.utils.Utils$1$2 this$1
+com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl$2:
+    final synthetic com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl this$0
 okhttp3.internal.cache.DiskLruCache$2:
     static final synthetic boolean $assertionsDisabled
 com.just.agentweb.core.web.controller.DefaultUIController$2:
@@ -20245,14 +19966,9 @@ com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$5:
     final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 io.github.inflationx.viewpump.ViewPump$Companion:
     static final synthetic kotlin.reflect.KProperty[] $$delegatedProperties
-com.xuexiang.xupdate._XUpdate:
-    private static boolean sIsShowUpdatePrompter
 com.xuexiang.xpage.base.XPageFragment:
     private int mRequestCode
     private com.xuexiang.xpage.base.XPageFragment$OnFragmentFinishListener mFragmentFinishListener
-com.xuexiang.xui.widget.popupwindow.bar.CookieBar$Params:
-    public long duration
-    public int layoutGravity
 com.xuexiang.xui.widget.searchview.AnimationUtils:
     public static int ANIMATION_DURATION_SHORT
     public static int ANIMATION_DURATION_LONG
@@ -20276,10 +19992,6 @@ kotlin.sequences.DropSequence$iterator$1:
     final synthetic kotlin.sequences.DropSequence this$0
 com.xuexiang.xutil.system.PermissionUtils$1:
     final synthetic com.xuexiang.xutil.system.PermissionUtils this$0
-com.xuexiang.qqgg.adapter.entity.Sort:
-    private int id
-    private int income
-    private boolean flag
 com.xuexiang.xui.adapter.recyclerview.DividerItemDecoration:
     private static final int[] ATTRS
 com.just.agentweb.core.web.controller.DefaultUIController$3:
@@ -20296,14 +20008,12 @@ io.reactivex.internal.operators.observable.ObservableWithLatestFrom$WithLatestFr
     final synthetic io.reactivex.internal.operators.observable.ObservableWithLatestFrom this$0
 com.xuexiang.xui.widget.tabbar.TabSegment$TabItemView$1:
     final synthetic com.xuexiang.xui.widget.tabbar.TabSegment val$this$0
+com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl$1:
+    final synthetic com.xuexiang.qqgg.utils.update.XHttpUpdateHttpServiceImpl this$0
 com.just.agentweb.core.web.AgentWebConfig:
     public static int MAX_FILE_LENGTH
 butterknife.internal.Utils:
     private static final android.util.TypedValue VALUE
-com.xuexiang.xaop.util.AppExecutors:
-    private final java.util.concurrent.ExecutorService mSingleIO
-    private java.util.concurrent.ExecutorService mPoolIO
-    private final java.util.concurrent.Executor mMainThread
 com.bumptech.glide.request.transition.DrawableCrossFadeFactory$Builder:
     private final int durationMillis
 com.xuexiang.xrouter.model.TypeWrapper:
@@ -20323,8 +20033,6 @@ com.xuexiang.xutil.data.ConvertTools:
     private static final char[] hexDigits
 com.xuexiang.xui.widget.banner.recycler.RecyclerViewBannerBase$IndicatorAdapter$1:
     final synthetic com.xuexiang.xui.widget.banner.recycler.RecyclerViewBannerBase$IndicatorAdapter this$1
-com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$6:
-    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 com.xuexiang.xui.widget.statelayout.StatefulLayout:
     private boolean mAnimationEnabled
 com.xuexiang.xui.widget.imageview.edit.TextStyleBuilder:
@@ -20346,6 +20054,8 @@ com.xuexiang.xutil.system.AppExecutors:
     private final java.util.concurrent.ExecutorService mSingleIO
     private final java.util.concurrent.ExecutorService mPoolIO
     private final java.util.concurrent.Executor mMainThread
+com.xuexiang.xhttp2.request.BaseRequest$5:
+    final synthetic com.xuexiang.xhttp2.request.BaseRequest this$0
 kotlin.text.Typography:
     public static final kotlin.text.Typography INSTANCE
 okhttp3.internal.Util:
@@ -20390,8 +20100,6 @@ com.just.agentweb.download.DownloadNotifier:
     int requestCode
 kotlin.jvm.internal.LongCompanionObject:
     public static final kotlin.jvm.internal.LongCompanionObject INSTANCE
-com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy$7:
-    final synthetic com.xuexiang.xui.widget.dialog.strategy.impl.MaterialDialogStrategy this$0
 io.reactivex.internal.operators.completable.CompletableNever:
     public static final io.reactivex.Completable INSTANCE
 io.reactivex.observers.BaseTestConsumer:
@@ -20440,8 +20148,6 @@ com.xuexiang.xutil.common.MapUtils:
     private static final java.lang.Object LOCK
 kotlin.text.CharDirectionality$Companion:
     static final synthetic kotlin.reflect.KProperty[] $$delegatedProperties
-com.xuexiang.qqgg.fragment.year.YearFragment$2:
-    final synthetic com.xuexiang.qqgg.fragment.year.YearFragment this$0
 com.xuexiang.qqgg.core.webview.XPageWebViewFragment$8:
     final synthetic com.xuexiang.qqgg.core.webview.XPageWebViewFragment this$0
 io.reactivex.internal.operators.completable.CompletableEmpty:
@@ -20485,6 +20191,8 @@ kotlin.ranges.ULongProgression:
     public static final kotlin.ranges.ULongProgression$Companion Companion
 kotlin.jvm.internal.CharCompanionObject:
     public static final kotlin.jvm.internal.CharCompanionObject INSTANCE
+com.xuexiang.qqgg.fragment.year.YearFragment$3:
+    final synthetic com.xuexiang.qqgg.fragment.year.YearFragment this$0
 com.xuexiang.xui.widget.slideback.SlideBackManager$1:
     final synthetic com.xuexiang.xui.widget.slideback.SlideBackManager this$0
 kotlin.math.Constants:
